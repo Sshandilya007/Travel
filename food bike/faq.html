@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="category-section">
+        <div class="category-nav">
+            <img src="assets/img/leftarrowimg.svg" alt="">
+            <h2>FAQs</h2>
+        </div>
+        <hr>
+
+        <div class="faq-container">
+            <!-- Accordion -->
+            <div class="acc-container">
+                <div class="acc">
+                    <div class="acc-head">
+                        <p id="firstPara">What is Foodella</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Lorem ipsum dolor sit amet consectetur unde quam corporis sAccusantium quisquam eius accusamus sapiente unde quis dicta quia, delectus inventore poribus error dolores iurlias nam. Voluptatem exercitationem veniam explicabo, voluptas
+                            accusamus officiis tempore libero delectus qui vero modi, commodi debitis est illum soluta harum assumenda cupiditate, voluptatum suscipit impedit a sapiente illo.</p>
+                        <a class="pagesLink" href="contact.html"><button class="emailQuery-btn">Email Query</button></a>
+                    </div>
+                </div>
+
+                <div class="acc ">
+                    <div class="acc-head">
+                        <p id="secondPara">How to add multiple dishes in cart</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore magnam, nobis consequuntur nemo cupiditate vel sit ducimus quisquam quaerat sint officia ad voluptas beatae eveniet. Aliquam aspernatur nulla cupiditate reiciendis
+                            ut? Illum odio id odit? Tempore, ea itaque illum laborum quasi, explicabo amet veritatis corporis dolorem minus commodi? Esse repudiandae nam eligendi fugit, architecto quam! Nostrum dolores nisi nulla repudiandae sed tempora
+                            impedit quaerat voluptatem itaque suscipit. Placeat adipisci, eius maiores blanditiis possimus culpa? Laudantium officia, nulla repellat rerum tenetur esse quos perferendis. Omnis corporis sequi, recusandae culpa quibusdam
+                            doloremque fugiat consectetur beatae quis illo accusamus vero odit, architecto et.</p>
+                        <button class="emailQuery-btn">Email Query</button>
+
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="acc-head">
+                        <p id="thirdPara">How to check out</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. doloremque fugiat consectetur beatae quis illo accusamus vero odit, architecto et.</p>
+                        <button class="emailQuery-btn">Email Query</button>
+
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="acc-head">
+                        <p id="forthPara">How to edit profile</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Lorem ipsum, dolor sit amet consectetur am, nobis consequuntur nemo cupiditate vel sit ducimus quisquam quaerat sint officia ad voluptas beatae eveniet. Aliquam aspernatur nulla cupiditate reiciendis ut? Illum odio id odit? Tempore,
+                            ea itaque illum laborum quasi, explicabo amet veritatis corporis dolorem minus commodi? Esse repudiandae nam eligendi fugit, architecto quam! Nostrum dolores nisi nulla repudiandae sed tempora impedit quaerat voluptatem itaque
+                            suscipit. Placeat adipisci, eius maiores blanditiis possimus culpa? Laudantium officia, nulla repellat rerum tenetur esse quos perferendis. Omnis corporis sequi, recusandae culpa quibusdam doloremque fugiat consectetur beatae
+                            quis illo accusamus vero odit, architecto et.</p>
+                        <button class="emailQuery-btn">Email Query</button>
+
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="acc-head">
+                        <p id="fifthPara">How to skip onboarding</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Lorem ipsum, dolor sit amet consectetur am, nobis consequuntur nemo cupiditate vel sit ducimus quisquam quaerat sint officia ad voluptas beatae eveniet. Aliquam aspernatur nulla cupiditate reiciendis ut? Illum odio id odit? Tempore,
+                            ea itaque illum laborum quasi, explicabo amet veritatis corporis dolorem minus commodi? Esse repudiandae nam eligendi fugit, architecto quam! Nostrum dolores nisi nulla repudiandae sed tempora impedit quaerat voluptatem itaque
+                            suscipit. Placeat adipisci, eius maiores blanditiis possimus culpa? Laudantium officia, nulla repellat rerum tenetur esse quos perferendis. Omnis corporis sequi, recusandae culpa quibusdam doloremque fugiat consectetur beatae
+                            quis illo accusamus vero odit, architecto et.</p>
+                        <button class="emailQuery-btn">Email Query</button>
+
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="acc-head">
+                        <p id="sixthPara">How to delete account</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Lorem ipsum, dolor sit amet consecteturreiciendis u explicabom aepellat rerum tenetur esse quos perferendis. Omnis corporis sequi, recusandae culpa quibusdam doloremque fugiat consectetur beatae quis illo accusamus vero odit, architecto
+                            et.
+                        </p>
+                        <button class="emailQuery-btn">Email Query</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.acc-container .acc:nth-child(1) .acc-head').addClass('active');
+        $('.acc-container .acc:nth-child(1)').addClass('active');
+
+        $('.acc-container .acc:nth-child(1) .acc-content').slideDown();
+        $('.acc-head').on('click', function() {
+            if ($(this).hasClass('active')) {
+                $(this).siblings('.acc-content').slideUp();
+                $(this).removeClass('active');
+            } else {
+                $('.acc-content').slideUp();
+                $('.acc-head').removeClass('active');
+                $(this).siblings('.acc-content').slideToggle();
+                $(this).toggleClass('active');
+            }
+        });
+
+        $('.acc').on('click', function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+            } else {
+                $('.acc').removeClass('active');
+                $(this).siblings('.acc-content').slideToggle();
+                $(this).toggleClass('active');
+            }
+        });
+    });
+</script>
+
+
+</html>

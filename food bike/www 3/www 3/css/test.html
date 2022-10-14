@@ -1,0 +1,40 @@
+<style>
+  .seat {
+    position: relative;
+  }
+  .seat:before {
+    content: "Seat #153";
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 15vw;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: sans-serif;
+  }
+</style>
+<div class="seat">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <mask id="circleMask">
+      <rect x="0" y="0" width="100%" height="100%" fill="white" />
+      <circle cx="0" cy="0" r="75" fill="black" />
+      <circle cx="800" cy="0" r="75" fill="black" />
+
+      <circle cx="0" cy="125" r="25" fill="black" />
+      <circle cx="0" cy="200" r="25" fill="black" />
+      <circle cx="0" cy="275" r="25" fill="black" />
+
+      <circle cx="800" cy="125" r="25" fill="black" />
+      <circle cx="800" cy="200" r="25" fill="black" />
+      <circle cx="800" cy="275" r="25" fill="black" />
+
+      <circle cx="0" cy="400" r="75" fill="black" />
+      <circle cx="800" cy="400" r="75" fill="black" />
+    </mask>
+
+    <rect width="800" height="400" x="0" y="0" mask="url(#circleMask)"></rect>
+  </svg>
+</div>

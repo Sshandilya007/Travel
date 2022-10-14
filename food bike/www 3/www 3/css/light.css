@@ -1,0 +1,411 @@
+body{
+    background: white;
+}
+
+.Travel-dir-con-t{
+    color: #000;
+}
+.Travel-dir-con {
+    color: #707070;
+}
+.location.fl-al p{color:#000;}
+.heading-con.fl-al.ml-20.heading-shadow{background-image:linear-gradient(89.92deg, #b9b9b9 0.05%, rgb(255 255 255 / 0%) 99.91%);}
+.search input{background-color:#f4f4f4;}
+.rec-filter-container.fl-al {
+    background: #E1E1E1;
+}
+.rec-filter {
+    background: #FFFFFF;
+border: 0.8px solid #D9D9D9;
+color: #000;
+}
+.rec-filter h5{
+    color: #8D8D8D;
+}
+.readymade-filters {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    color: #000;
+}
+.readymade-filters h5{
+    color: #737373;
+}
+.ticket-container {
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 6%);
+}
+.circle-1 {
+    background: #f2f2f2;
+}
+.circle-2 {
+    background: #f2f2f2;
+}
+.filter-flights-bottom{
+    background: #E1E1E1;
+}
+.flight-bttm-filter{
+    background: #FFFFFF;
+border: 0.8px solid #D9D9D9;
+color: #000;
+}
+.location input {
+    color: black;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+}
+
+.scroll-option {
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    color: black;
+}
+
+.scroll-option p {
+    /* color: black; */
+}
+.preview-location p.active {
+    color: black;
+}
+
+.preview-location {
+    color: #7C7C7C;
+}
+
+.offer-section {
+    background: linear-gradient(90.25deg, #E8E8E8 1.02%, rgba(232, 232, 232, 0.24) 98.55%);
+}
+
+p {}
+
+.heading-con p {
+    color: black;
+}
+
+.offer-options {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    color: black;
+}
+.preview-location p.active {
+    color: black;
+}
+
+.preview-location {
+    color: #7C7C7C;
+}
+
+.offer-section {
+    background: linear-gradient(90.25deg, #E8E8E8 1.02%, rgba(232, 232, 232, 0.24) 98.55%);
+}
+
+p {}
+
+.heading-con p {
+    color: black;
+}
+
+.offer-options {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    color: black;
+}
+
+h3.ml-20 {
+    color: #727272;
+}
+
+.reccommended-section {
+    box-shadow: 0px -20px 20px 20px #ffffffe3;
+    /* z-index: 2; */
+}
+
+.recommended-options {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: black;
+}
+
+.bottom-nav-main {
+    /* background: white; */
+}
+
+.heading-con.fl-al.ml-20.heading-shadow {
+    background: linear-gradient(89.92deg, #ffffff 85.05%, rgb(255 255 255) 69.91%, rgb(255 255 255 / 43%) 100%);
+}
+.search-heading.fl-al {
+    color: black;
+}
+
+.search-select-container {
+    background: #FFFFFF;
+    border: 1px solid rgba(125, 125, 125, 0.3);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.search-input-container {
+    background: #FFFFFF;
+    border: 1px solid rgba(125, 125, 125, 0.3);
+}
+
+.direction-container {
+    background: #E8E8E8;
+    border: 1px solid rgba(125, 125, 125, 0.3);
+}
+
+.search-input-container p {
+    color: #565656;
+}
+
+.search-input-container input {
+    color: black;
+}
+
+.search-input-container h5 {
+    color: #8F8F8F;
+}
+.bg-search{
+    background: #f8f8f8;
+}
+.ticket-booking-con {
+    box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 17%);
+}
+
+.Black-box-container {
+    background: #FBFBFB;
+}
+
+.black-box-content h1 {
+    color: black;
+}
+
+.apply-con {
+    border: 1.4px solid #D9D9D9;
+}
+
+.apply-con input {
+    color: black;
+}
+.radio {
+    color: #7A7A7A;
+}
+.pr-bn-content {
+    box-shadow: -1px 8px 20px 3px #0000000f;
+}
+.searched-hot-con {
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px 20px rgb(18 18 18 / 5%);
+}
+
+.search-hotel-top h1 {
+    color: black;
+}
+
+.hotel-location.fl-al {
+    color: black;
+}
+h1 {
+    color: black;
+}
+
+grey-text {
+    color: #767676;
+}
+
+.des-loc {
+    color: black;
+    border: 1px solid rgba(78, 78, 78, 0.3);
+}
+
+.view-map-con {
+    color: white;
+}
+
+ul.description-bar {color: #767676;}
+
+.description-bottom.w-100 {
+    background: #EAEAEA;
+}
+
+grey-text {
+    color: #767676;
+}
+
+p.grey-text {color: #767676;}
+
+.key-feature-con {
+    color: black;
+}
+
+.amenties-items-con.fl-al {
+    color: #2C2C2C;
+}
+
+.property-time {
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+}
+
+ul.property-rules {
+    color: #313131;
+}
+
+.circle-big {
+    color: black;
+}
+
+.prg-bar-1 {
+    color: black;
+}
+
+.reviews-content {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+}
+
+.review {
+    color: #696969;
+}
+
+.des-hotels {}
+
+img.des-img {
+    border: 2px solid #D2D2D2;
+}
+
+.search-bottom-nav-bar h1 {
+    color: white;
+}
+.select-room-container {
+    background: #FFFFFF;
+    border: 0.8px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.05);
+}
+
+.select-room-option-con {
+    border: 1px solid #D5D5D5;
+    background: #f7f7f7;
+}
+
+.room-facilities {
+    color: #4E4E4E;
+}
+.Black-box-container {
+    box-shadow: 0px 3px 15px 2px rgb(0 0 0 / 9%);
+}
+.offer-code-con {
+    background: #F2F2F2;
+    color: #222222;
+}
+
+.offer-code-con h5 {
+    color: #222222;
+}
+h1.cl-w {
+    color: white;
+}
+
+.floating-label {
+    border: 1.4px solid #D7D7D7;
+    color: black;
+}
+
+.floating-label label {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+input.floating-input {
+    color: black;
+}
+
+.floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.profile-options {
+    color: black;
+}
+
+.Black-box-container hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.bottom-sheet-location {
+    background: #f8f8f8;
+}
+
+.airport-code {
+    color: black;
+}
+.bottom-sheet-location {
+    background: #f8f8f8;
+}
+
+.airport-code {
+    color: black;
+}
+
+div#room-bs {
+    background: #f8f8f8;
+}
+
+.class-plane {.bottom-sheet-location {
+    background: #f8f8f8;
+}
+}
+.airport-code {
+    color: black;
+}   
+.profile-options img {
+    filter: invert(1);
+}
+
+
+.heading-con img {
+    filter: invert(1);
+}
+.search-heading img {
+    filter: invert(1);
+}
+.Travel-dir-con-t.fl-al img {
+    filter: invert(1);
+}
+.pr-container img{filter: invert(0)!important;}
+
+.flights-header img {
+    filter: invert(1);
+}
+.hotel-location.fl-al img {
+    filter: invert(1);
+}
+.des-top-right img {
+    filter: invert(1);
+}
+.offer-zone-heading img{filter:invert(1);}
+
+.heart-container {
+    background: rgba(203, 203, 203, 0.5);
+}
+.des-top img {
+    filter: invert(1);
+}
+.select-room-facilities img {
+    filter: invert(1);
+}
+.scroll-option img {
+    filter: invert(1);
+}
+.scroll-option .active img {
+    filter: invert(1);
+}
+
+
+.lightactive{color:#fff;}
+
+.option-des p{color:#666;}
+.edit-btn p{color:#000;}
+
+.search input{color:#000;}
+.location.fl-al p{border-color:#000;}
+.floating-label.search{background-color:#fff;}
+.highlight{background-color:#fff;}
+.floating-label.search input{background-color:#fff;}

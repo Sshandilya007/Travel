@@ -1,0 +1,3888 @@
+/* CSS RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    --webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+h3 {
+    font-size: 14px;
+}
+
+:root {
+    --span-color: #9c9a9a;
+    --bg-color: #ffaf41;
+    --main-color: #787878;
+    --purple-gradient: linear-gradient( 90deg, rgb(129 84 230 / 62%) 0.89%, rgb(230 99 171 / 86%) 98.39%);
+}
+
+hr {
+    border: 0.1px solid rgb(255 255 255 / 20%);
+}
+
+.tStart {
+    text-align: start;
+}
+
+.pb-50 {
+    padding-bottom: 50px!important;
+    /* display: none; */
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+.pb-170 {
+    padding-bottom: 170px;
+}
+
+.clr-yellow {
+    /* color: #ffaa00; */
+    color: #9c9a9a;
+}
+
+img.topBlob {
+    position: absolute;
+    top: -52%;
+    left: 45%;
+    transform: rotate(18deg);
+    width: 100%;
+    height: inherit;
+}
+
+.bg-clr {
+    background-color: #008cff !important;
+}
+
+.btn-clr {
+    /* background-color: #ffaa00 !important; */
+    color: #fff !important;
+    background-color: #008cff !important;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.blob-container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+img.bottobBlob {
+    position: absolute;
+    bottom: -50%;
+    transform: rotate(33deg);
+    width: 100%;
+    left: -60%;
+    height: inherit;
+}
+
+
+/************************************************* UNIVERSAL APP CSS START ***************************************************************/
+
+body {
+    background-color: #fff;
+    /*background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);*/
+    font-family: system-ui, -apple-system, -apple-system-font, "Segoe UI", "Roboto", sans-serif;
+    font-size: 12px;
+    height: 100vh;
+    margin: 0px;
+    background-color: #000 !important;
+    outline: none;
+    padding: 0px;
+    background: #ffffff;
+    color: #fff;
+    width: 100%;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #000;
+    background: none;
+    font-weight: 600;
+    /* padding: 8px 2px; */
+    margin: 8px 0;
+    resize: none;
+}
+
+
+/*************** SIDEBAR CSS START ***************/
+
+.menu-btn {
+    cursor: pointer;
+    width: 30px;
+    margin: 0 20px;
+    height: 30px;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    z-index: 200;
+    top: calc(20px + env(safe-area-inset-top, 0px))!important;
+    top: 16px;
+}
+
+.menu-btn span.line {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.menu-btn span.line:nth-child(1) {
+    top: 0px;
+}
+
+.menu-btn span.line:nth-child(2) {
+    top: 8px;
+}
+
+.menu-btn span.line:nth-child(3) {
+    top: 16px;
+}
+
+.sideOverlay-container {
+    position: fixed;
+    background: rgb(168 160 52 / 23%);
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    display: none;
+    z-index: 9;
+    left: 0px;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.sidenav {
+    position: fixed;
+    background: #ffff;
+    top: 0px;
+    left: -100%;
+    height: 100%;
+    width: 80%;
+    z-index: 99;
+    overflow-y: auto;
+    /* display: none; */
+}
+
+.menu-btn.open {
+    position: fixed;
+}
+
+.sidenav .name-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 15px;
+    padding: 18px 55px;
+    color: #000;
+    border-bottom: 5px solid #f2f2f2;
+}
+
+.sidenav ul {
+    padding: 0px;
+    line-height: 30px;
+}
+
+.sidenav ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    float: none;
+}
+
+.sidenav ul li img {
+    width: 15px;
+    height: 15px;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #aaaaaa;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 22px;
+    font-weight: 500;
+}
+
+.sidenav .logout-btn {
+    border-top: 1px solid #898a8d52;
+    border-bottom: 1px solid #898a8d4d;
+}
+
+
+/* **************SIDEBAR CSS END *************************/
+
+
+/************************************************* UNIVERSAL APP CSS START ***************************************************************/
+
+
+/********************************************************** LOGIN CSS START ***********************************************************/
+
+.login-section .login-inputs .login-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #b7b7b7;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #252525;
+    margin: 25px 0;
+    gap: 6px;
+}
+
+.add-account img {
+    height: 22px;
+    width: 22px;
+    display: block;
+}
+
+.login-section .login-screen h1 {
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.login-section .login-screen p {
+    padding: 17px 0;
+    color: rgb(172 168 168);
+    font-size: 16px;
+}
+
+.login-section .login-inputs {
+    padding-top: 20px;
+}
+
+.first-screenContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(210deg, #ff9e06, #ffc53fde);
+}
+
+.screen-content {
+    text-align: center;
+}
+
+.screen-content h1 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.login-section {
+    /* margin: 0 42px; */
+    width: 90%;
+}
+
+.login-section .login-inputs .login-input input {
+    border: none;
+    color: var(--span-color);
+}
+
+.first-screenContainer img {
+    width: 100%;
+}
+
+.login-section .login-inputs .login-input figure img {
+    width: 18px;
+    height: 18px;
+    margin: 0 7px;
+}
+
+.login-section .login-link {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.login-section .login-link a {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login-section .add-account {
+    text-align: center;
+    padding-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add-account a {
+    text-decoration: none;
+    font-size: 14px;
+    /* padding-bottom: 48px; */
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+}
+
+
+/********************************************************** LOGIN CSS END *************************************************************/
+
+
+/********************************************************** REGISTER CSS START *************************************************************/
+
+.register-section .register-inputs .register-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #605e5e8c;
+    padding: 6px 5px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.register-section .register-screen p {
+    padding: 17px 0;
+    color: rgb(182 176 176);
+    font-size: 15px;
+}
+
+.register-screen h1 {
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.register-section .register-inputs {
+    padding-top: 20px;
+}
+
+.bg-clr span {
+    color: #fff !important;
+}
+
+.register-section .register-inputs .register-input input {
+    border: none;
+}
+
+.register-section .register-inputs .register-input figure img {
+    width: 18px;
+    height: 25px;
+    margin: 0 7px;
+}
+
+.register-section .register-account {
+    text-align: center;
+    padding-top: 140px;
+}
+
+.register-account a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/********************************************************** REGISTER CSS END *************************************************************/
+
+
+/********************************************************** FORGOT AND RESET PASSWORD CSS START *************************************************************/
+
+.forgotpass-section .forgotpass-inputs .forgotpass-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #605e5e8c;
+    padding: 6px 5px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.forgotpass-section .forgotpass-screen p {
+    padding: 17px 0;
+    color: rgb(182 176 176);
+    /* max-width: 86%; */
+    font-size: 17px;
+}
+
+.forgotpass-screen h1 {
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.forgotpass-section .forgotpass-inputs {
+    padding-top: 20px;
+}
+
+.forgotpass-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.forgotpass-section .forgotpass-inputs .forgotpass-input input {
+    border: none;
+    outline: none;
+}
+
+.forgotpass-section .forgotpass-inputs .forgotpass-input figure img {
+    width: 18px;
+    height: 25px;
+    margin: 0 7px;
+}
+
+.d-flex-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.d-flex-content .contents {
+    margin: 0 17px;
+}
+
+.forgotpass-section .forgotpass-account {
+    text-align: center;
+}
+
+.forgotpass-section .forgotpass-account img {
+    width: 25px;
+    height: 25px;
+}
+
+.forgotpass-section .forgotpass-account a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/********************************************************** FORGOT AND RESET PASSWORD CSS END *************************************************************/
+
+
+/**************************************************** VERIFY ACCOUNT CSS START ******************************************************************/
+
+.forgotpass-section .verify-inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.forgotpass-section .verify-inputs .verify-input input {
+    border: 1px solid rgb(233, 230, 230);
+    margin-top: 20px;
+    outline: none;
+    border-radius: 5px;
+    padding: 16px 3px;
+    text-align: center;
+}
+
+.location-content h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+/**************************************************** VERIFY ACCOUNT CSS END ******************************************************************/
+
+.location-section {
+    margin: 0 24px;
+}
+
+.location-section .location-content {
+    text-align: center;
+}
+
+.location-section figure img {
+    width: 100%;
+    object-fit: contain;
+    /* padding: 0 30px; */
+    height: 353px;
+}
+
+.enableLocationsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 27px;
+}
+
+.location-section .location-content p {
+    padding: 20px 5px;
+    font-size: 14px;
+    color: #9a9a9a;
+    line-height: 22px;
+}
+
+.location-btn figure img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/**************************************************** GLOBAL CUSTOMER CSS START *******************************************************/
+
+section.globalcustomers {
+    padding-top: 30px;
+}
+
+.globalcustomers .customer-location {
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    border-radius: 15px;
+    background-color: #252525;
+    /* margin-top: 18px; */
+    margin: 10px 8px;
+}
+
+.globalcustomers .customer-location h1 {
+    /* color: var(--main-color); */
+    opacity: .9;
+}
+
+.globalcustomers .customer-location .secondaddress {
+    color: var(--span-color);
+}
+
+.globalcustomers .offer-cards {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 13px;
+    overflow-x: scroll;
+    padding-left: 16px;
+    scroll-snap-type: x proximity;
+}
+
+.offer-cards .food_offerscards .food_offercard {
+    display: flex;
+    align-items: center;
+    padding: 0px 3px;
+}
+
+.offerCard-content h3 {
+    font-size: 15px;
+}
+
+.offer-cards .food_offerscards .food_offercard .offer-content {
+    flex: 1 0 66%;
+}
+
+.offer-cards .food_offerscards .food_offercard .offer-content h2 {
+    color: #386b93;
+    font-weight: bold;
+}
+
+.offer-cards .food_offerscards .food_offercard .offer-content p {
+    color: #386b93 !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.offer-cards .food_offerscards .food_offercard .offer-content strong {
+    font-size: 26px;
+    color: #386b93;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.globalcustomers .offer-cards .food_offerscards {
+    padding: 14px;
+    border-radius: 10px;
+    background: linear-gradient(130deg, #f6cbe0, #f7e8a3);
+    flex: 1 0 84%;
+    margin: 9px 0px;
+}
+
+.globalcustomers .food_offerscards .food_offerscard {
+    margin: 0 10px;
+}
+
+.globalcustomers .secondOffer {
+    background: rgb(85 216 208) !important;
+}
+
+.offer-content img {
+    width: 74px;
+    height: 32px;
+}
+
+.globalcustomers .customer-location figure img {
+    width: 25px;
+    height: 25px;
+}
+
+.globalcustomers .food_offerscards figure img {
+    width: 100%;
+    height: 92px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.globalcustomers .food-categories .food-category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.food-categories {
+    margin: 13px 10px;
+    background-color: #252525;
+    padding: 13px 0;
+    border-radius: 15px;
+}
+
+.food-categories h3 {
+    font-size: 17px;
+}
+
+.globalcustomers .food-categories .food-category li span {
+    font-size: 14px;
+}
+
+.currentLocation-content {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.globalcustomers .food-categories .food-category .more-categories {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.globalcustomers .food-categories .food-category .more-categories a {
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.globalcustomers .food-categories .food-category .more-categories img {
+    width: 26px;
+    height: 26px;
+}
+
+.globalcustomers .food-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: #252525; */
+    justify-content: center;
+}
+
+.globalcustomers .food-items .food-item {
+    margin: 18px 0px;
+    text-align: center;
+    flex: 1 0 25%;
+}
+
+.globalcustomers .food-items .food-item figcaption {
+    font-size: 14px;
+}
+
+.globalcustomers .food-items .food-item figure img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.offers_card {
+    margin: 13px 0px;
+    padding-bottom: 150px;
+}
+
+.offerCard-content {
+    padding: 0 13px;
+}
+
+.todays-offers {
+    margin: 13px 10px;
+    /* padding-bottom: 160px; */
+    background-color: #252525;
+    border-radius: 15px;
+    padding: 13px 0px;
+}
+
+.todays-offers .todays-offer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* padding-top: 16px; */
+    padding: 16px 12px;
+}
+
+.todays-offers .todays-offer figure img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+/**************************************************** GLOBAL CUSTOMER CSS END *******************************************************/
+
+
+/****************************************************** CATEGORIES SECTION CSS START *********************************************/
+
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+ul {
+    padding: 0px;
+}
+
+ul li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.list {
+    height: 100px;
+}
+
+.activelink {
+    color: rgb(239, 158, 8);
+}
+
+.category-section .food-categories .food-category ul li {
+    list-style: none;
+    text-align: center;
+    border: 1px solid var(--span-color);
+    border-radius: 12px;
+    padding: 10px 8px;
+}
+
+.category-section .food-categories .food-category ul li a {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.category-section .food-categories .food-category ul li:active {
+    border: 3px solid var(--bg-color);
+}
+
+.category-section .food-categories .food-category ul li a figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.category-section .category-nav {
+    display: flex;
+    align-items: center;
+    padding: 22px 20px;
+    /* margin-top: 30px; */
+}
+
+.category-section .food-categories {
+    /* padding: 0px 11px; */
+    /* margin-bottom: 60px; */
+}
+
+.category-section .category-nav h2 {
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+}
+
+.category-section .category-nav img {
+    width: 25px;
+    height: 25px;
+}
+
+.food-categories .food-category .fooditem-categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    margin: 0 10px;
+    justify-content: center;
+}
+
+.fooditem-category-content h3 {
+    color: #000;
+    text-transform: capitalize;
+}
+
+.pizza_price {
+    color: rgb(147, 147, 147) !important;
+}
+
+.fooditem-categories .fooditem-category {
+    border: 1px solid #80808029;
+    border-radius: 18px;
+    padding: 14px 14px;
+    position: relative;
+    flex: 1 0 40%;
+    margin: 8px 0px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+.fooditem-categories .fooditem-category .fooditem-category-content {
+    padding-top: 15px;
+}
+
+.fooditem-categories .fooditem-category p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #241f1f;
+}
+
+.fooditem-categories .fooditem-category figure img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+.fooditem-categories .fooditem-category span {
+    color: rgb(137 129 129);
+    font-size: 15px;
+}
+
+.fooditem-categories .fooditem-category .add_items {
+    width: 18px !important;
+    height: 18px !important;
+    margin-left: auto;
+    display: block;
+    border-radius: 50%;
+    padding: 10px;
+    /* background-color: #ffaa00; */
+    background: linear-gradient( 90deg, rgba(129, 84, 230, 0.8) 0%, rgba(230, 99, 171, 0.8) 98.71%);
+}
+
+
+/****************************************************** CATEGORIES SECTION CSS END *********************************************/
+
+
+/****************************************************** CAFE CATEGORIES SECTION CSS START *********************************************/
+
+.tab-container {
+    /* margin: 5% 8%; */
+    border-radius: 4px;
+}
+
+
+/* .tab-menu {} */
+
+.tab-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tab-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.tab-menu ul li a {
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #e2e2e2;
+}
+
+.tab-menu ul li a.active-a {
+    background-color: rgb(224, 150, 22);
+    color: #ffffff;
+}
+
+.cafeTabs_container {
+    padding-bottom: 50px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab h2 {
+    color: rgba(0, 0, 0, .7);
+}
+
+.tab p {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: justify;
+}
+
+.tab-active {
+    display: block;
+    padding-top: 25px;
+}
+
+
+/****************************************************** CAFE CATEGORIES SECTION CSS END *********************************************/
+
+
+/******************************************************** CAFE DETAILS CSS START **********************************************************/
+
+.category-section .cafe-details .cafe-detail {
+    margin: 14px 10px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: #252525;
+    padding-bottom: 13px;
+}
+
+.category-section .cafe-details .cafe-detail p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.category-section .cafe-offers {
+    padding: 18px 14px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    scroll-behavior: smooth;
+}
+
+.category-section .cafe-details .cafe-detail span {
+    color: rgb(173, 167, 167);
+    font-size: 14px;
+}
+
+.category-section .cafe-offers .cafe-offer {
+    border: 1px solid rgb(239, 238, 238);
+    border-radius: 12px;
+    padding: 14px 0;
+    background-color: #252525;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    flex: 1 0 85%;
+    margin: 0 7px;
+}
+
+.category-section .cafe-offers .cafe-offer .cafe-offer_contents {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.category-section .cafe-offers .cafe-offer .cafe-offer_content {
+    padding: 0 14px;
+    line-height: 27px;
+}
+
+.category-section .cafe-offers .cafe-offer .cafe-offer_content span {
+    color: rgb(173, 167, 167);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.category-section .cafe-offers .cafe-offer figure img {
+    width: 26px;
+    height: 26px;
+    padding: 14px;
+    background-color: rgb(255 255 255);
+    border-radius: 10px;
+}
+
+.cafe-ratingContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.cafe-ratingContent img {
+    width: 20px;
+    height: 20px;
+}
+
+.cafe_tab-menu {
+    padding: 28px 22px;
+}
+
+.cafeTabsContainer .cafeTab-teaser {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cafeTabsContainer .cafeTab-teaser .cafeTab-menu {
+    margin-top: 34px;
+}
+
+.cafeTabsContainer .cafeTab-teaser .cafeTab-menu ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+}
+
+.cafeTabsContainer .cafeTab-teaser .cafeTab-menu ul li {
+    -ms-flex-preferred-size: 0;
+    -ms-flex-positive: 1;
+    max-width: 100%;
+    text-align: center;
+    flex: 0 0 28%;
+}
+
+.foodTypes .foodType {
+    display: flex;
+    align-items: center;
+    padding: 10px 26px;
+    gap: 5px;
+}
+
+.cafeTabsContainer .cafeTab-teaser .cafeTab-menu ul li a:active {
+    background-color: #bd952d;
+}
+
+.cafeTabsContainer .cafeTab-teaser .cafeTab-menu ul li a {
+    color: #000;
+    letter-spacing: 0.44px;
+    display: inline-block;
+    padding: 16px 0px;
+    display: block;
+    text-decoration: none;
+    transition: 0.5s all;
+    background: #fff;
+    border: 2px solid #d0d062;
+    border-bottom: 0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/******************************************************** CAFE DETAILS CSS END **********************************************************/
+
+
+/********************************************************** RESTAURANT CSS START ***********************************************************/
+
+.category-section .location-main-container .location-container figure img {
+    width: 18px;
+    height: 18px;
+}
+
+.category-section .restaurant-choices {
+    padding: 15px 19px;
+}
+
+.filterFullImg {
+    width: 20px;
+    background-color: #252525;
+    height: 20px;
+    padding: 13px;
+    border: 1px solid #c3c3c3;
+    border-radius: 12px;
+}
+
+.category-section .restaurant-choices .restaurant-choice {
+    border: 1px solid #d2d2d2;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 18px 18px 0 0;
+    background-color: #252525;
+    position: relative;
+    margin-bottom: 38px;
+}
+
+label.bestSeller {
+    position: absolute;
+    bottom: 30%;
+    color: #fff;
+    padding: 6px 18px;
+    /* background-color: #ffaa00; */
+    background: linear-gradient(90deg, #15d17cb8 0%, #00ff8c70 100%);
+    border-radius: 0px 7px 7px 0px;
+    backdrop-filter: blur(12px);
+}
+
+.category-section .location-main-container .location-container {
+    /* border: 1px solid #aaa7a78f; */
+    border-color: var(--purple-gradient);
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    background-color: #252525;
+    margin: 20px 0px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 100%;
+    gap: 10px;
+    padding: 6px 12px;
+}
+
+.restaurant-choices .restaurant-choice figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.restaurant-choices .restaurant-choice .restaurant_overlay-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.restaurant-choices .restaurant-choice .restaurant_overlay-container .res_content {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    position: sticky;
+    padding: 12px;
+}
+
+.restaurant-choices .restaurant-choice .restaurant_overlay-container span {
+    padding: 8px;
+    color: #fff !important;
+    background-color: #b9afaaeb;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+.restaurant-choices .restaurant-choice .restaurant_overlay-container figure img {
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: rgb(212, 209, 209);
+}
+
+.restaurant-choices .restaurant-choice .restaurant-content .restaurant-ratings {
+    text-align: center;
+}
+
+.restaurant-choices .restaurant-choice .restaurant-content .restaurant-ratings pre {
+    /* color: #e1af18; */
+    color: #fff;
+    opacity: .9;
+}
+
+.restaurant-choices .restaurant-choice .restaurant-content .restaurant-ratings span {
+    color: #e1af18;
+}
+
+.restaurant-choices .restaurant-choice .restaurant-content .restaurant-ratings .reviewRating {
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-choices .restaurant-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+    line-height: 23px;
+}
+
+.mainTab {
+    padding: 7px 0px !important;
+}
+
+
+/* .bg-grey {
+    background-color: rgb(215 215 215) !important;
+} */
+
+a.mainTab.bg-grey p {
+    color: #000;
+}
+
+
+/********************************************************** RESTAURANT CSS END ***********************************************************/
+
+
+/********************************************************** FAVOURITE RESTAURANT CSS START ***********************************************************/
+
+.tabsContainer .tab-menu {
+    margin-top: 16px;
+}
+
+.tabsContainer .tab-menu ul {
+    /* list-style: none; */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 58px; */
+    margin: 0 46px;
+}
+
+.tabsContainer .tab-menu ul li {
+    -ms-flex-preferred-size: 0;
+    -ms-flex-positive: 1;
+    text-align: center;
+    margin: 0;
+    flex: 1 0 22%;
+}
+
+a.restaurant-tab {
+    border-radius: 0 30px 30px 0 !important;
+}
+
+.tabsContainer .tab-menu ul li a {
+    color: #fff !important;
+    letter-spacing: 0.44px;
+    display: inline-block;
+    padding: 14px 12px;
+    background-color: #252525 !important;
+    font-weight: 600;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s all;
+    /* background: #e7e7e7; */
+    /* border-bottom: 0; */
+    border-radius: 30px 0 0 30px;
+}
+
+.tabsContainer .tab-menu ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tabsContainer .tab-menu ul li a.active {
+    /* background: #ffaa00; */
+    color: #fff;
+    background: linear-gradient( 90deg, rgba(129, 84, 230, 0.8) 0%, rgba(230, 99, 171, 0.8) 98.71%);
+    text-decoration: none;
+}
+
+.tab-box {
+    display: none;
+}
+
+.tabsContainer .tab-teaser {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tab-main-box {
+    margin-top: 10px;
+}
+
+
+/********************************************************** FAVOURITE RESTAURANT CSS END ***********************************************************/
+
+
+/********************************************************** FAVOURITE DISHES CSS END ***********************************************************/
+
+.food-categories .food-category .fooditem-categories .dishes-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+
+.food-categories .food-category .fooditem-categories .dishes-content .items_fav {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #d1d1ce;
+}
+
+.contentDetails {
+    display: flex;
+    align-items: center;
+}
+
+.contentDetails .extracontentDetails {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 30px;
+    padding-top: 8px;
+}
+
+.contentDetails .likeItems {
+    background-color: #ededed !important;
+}
+
+
+/********************************************************** FAVOURITE DISHES CSS END ***********************************************************/
+
+
+/***************************************************** CART CONTAINER CSS START **********************************************/
+
+.category-section .cartitems-container .cart-overview {
+    display: flex;
+    align-items: center;
+    padding: 12px 22px;
+    gap: 4px;
+}
+
+.category-section .cartitems-container .cart-overview span::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid;
+    margin: 0px 5px;
+}
+
+.category-section .cartitems-container .cart-overview span {
+    color: #a19f9f;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.category-section .cartitems-container .cart-overview_contents {
+    display: flex;
+    padding: 8px 0;
+    align-items: center;
+}
+
+.category-section .cartitems-container .cart-overview_contents .booking-item {
+    line-height: 30px;
+    flex: 1 0 40%;
+}
+
+.category-section .cartitems-container .cart-overview_contents .booking-item span {
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 31px;
+}
+
+.delivery-address.exactLocation {
+    padding-top: 18px;
+}
+
+.category-section .cartitems-container .cart-overview_contents figure img {
+    width: 100%;
+    height: 76px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.category-section .cartitems-container .item-booking_detail {
+    margin-left: auto;
+    margin-right: 27px;
+    line-height: 36px;
+}
+
+.item-booking_detail span {
+    color: #8080808c;
+}
+
+.category-section .cartitems-container .item-booking_detail h3 {
+    font-size: 18px;
+}
+
+.category-section .cartitems-container .item-booking_detail figure img {
+    width: 39px;
+    height: 39px;
+    padding-left: 6px;
+}
+
+
+/***************************************************** CART CONTAINER CSS END **********************************************/
+
+
+/***************************************************** COUPONS CONTAINER CSS START **********************************************/
+
+.search-container {
+    display: flex;
+    align-items: center;
+    padding: 0 27px;
+    padding-top: 24px;
+    gap: 22px;
+}
+
+.search-container input {
+    border: 1px solid rgb(201 196 196 / 79%);
+    border-radius: 20px;
+    width: 100%;
+    background-color: #252525;
+    padding: 13px 15px;
+}
+
+.searchAdd {
+    padding: 10px 17px;
+}
+
+.search-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.coupon-code-container {
+    padding: 10px 22px;
+    border-radius: 15px;
+    margin: 30px 8px;
+    background-color: #252525;
+}
+
+.coupon-code-container .coupon_codes .firstCode {
+    margin-right: auto;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.coupon-code-container .coupon_codes .firstCode h1 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.coupon-code-container .coupon_codes .firstCode span {
+    font-size: 14px;
+    color: var(--span-color);
+    font-weight: 700;
+}
+
+.coupon-code-container .coupon_codes figure img {
+    width: 22px;
+    height: 22px;
+    padding: 13px;
+    background: linear-gradient( 90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    /* background-color: #f1f0ee; */
+    border-radius: 10px;
+}
+
+.coupon-code-container .coupon_codes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coupon-code-container .coupon-content p {
+    line-height: 2;
+    padding: 3px 0;
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.coupon-code-container .coupon-content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 3px 0;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 3;
+}
+
+.coupon-code-container .coupon_codes a {
+    color: #b4b4b4;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+
+/***************************************************** COUPONS CONTAINER CSS END **********************************************/
+
+
+/***************************************************** ADDRESS CONTAINER CSS START **********************************************/
+
+.category-section .address-container {
+    margin: 0 30px;
+    padding: 16px 8px;
+}
+
+.category-section .address-container .address-inputs {
+    padding: 13px 0;
+    margin-bottom: 150px;
+    width: 92%;
+}
+
+.category-section .address-container .address-inputs input,
+textarea {
+    border: 1px solid rgb(219, 219, 219);
+    padding: 11px;
+    flex: 0 0 44%;
+    background-color: #252525;
+}
+
+.category-section .address-container .address-inputs .address-secondaryInput {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/***************************************************** ADDRESS CONTAINER CSS END **********************************************/
+
+
+/***************************************************** SUCCESS CSS START **********************************************/
+
+.category-section .success-container {
+    text-align: center;
+}
+
+.category-section .success-container figure img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.category-section .success-container p {
+    line-height: 2;
+    color: #969090;
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.restaurantCategory .addReview textarea {
+    border: 1px solid rgb(221, 216, 216);
+    padding: 0%;
+    width: 92%;
+    padding: 10px 13px;
+    margin: 18px 0;
+}
+
+.ratingContainer .star-rating span {
+    font-size: 15px;
+    color: var(--main-color);
+    letter-spacing: 4px;
+}
+
+
+/***************************************************** SUCCESS CSS END **********************************************/
+
+
+/***************************************************** SEARCH DISHES CSS START **********************************************/
+
+.tab-main-box .cartitems-container .cart_overview a {
+    display: table;
+    margin: auto;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cart_overview {
+    background-color: #252525;
+    margin: 8px;
+    border-radius: 15px;
+}
+
+.category-section .tab-main-box .dishItem-searches {
+    padding-top: 9px;
+}
+
+
+/***************************************************** SEARCH DISHES CSS END **********************************************/
+
+
+/***************************************************** SEARCH RES CATEGORY CSS START **********************************************/
+
+
+/* .restaurant-category {
+    background-color: #e8e8e8;
+} */
+
+.cartitems-container .restaurant-category-container {
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+}
+
+.cartitems-container .restaurant-category-container .restaurantCategory {
+    padding: 22px;
+    background-color: #000;
+}
+
+.resChoice_location {
+    padding-top: 15px;
+    display: flex;
+    margin: 0 24px;
+    gap: 13px;
+    align-items: center;
+}
+
+.cartitems-container .restaurant-category-container .restaurantCategory .restaurantCategory-rating .ratingContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.cartitems-container .restaurant-category-container .restaurantCategory .restaurantCategory-rating .ratingContainer .star-rating {
+    padding: 14px 0px;
+    border: 1px solid rgb(226, 226, 231);
+    border-radius: 8px;
+    flex: 1 0 15%;
+    text-align: center;
+    background-color: #252525;
+}
+
+.chooseOption {
+    background: transparent !important;
+    width: 20px !important;
+    height: 20px !important;
+    padding: 0 !important;
+}
+
+.cartitems-container .restaurant-category-container .restaurantCategory .restaurantCategory-rating .ratingContainer .star-rating:hover {
+    background-color: #008cff;
+}
+
+.cartitems-container .restaurant-category-container .restaurantCategory .restaurantCategory-rating .ratingContainer .star-rating span:hover {
+    color: #fff;
+}
+
+.cartitems-container .restaurant-category-container .restaurantCategory .cuisinesContainer {
+    padding: 10px 0;
+}
+
+.cartitems-container .restaurant-category-container .restaurantCategory .cuisinesContainer .cuisineContainer {
+    padding: 12px 0;
+}
+
+.cartitems-container .restaurant-category-container .restaurantCategory .cuisinesContainer .cuisineContainer .cuisines-btn {
+    border: 1px solid #dad7d7;
+    padding: 9px 16px;
+    border-radius: 20px;
+    background: none;
+    margin: 8px 2px;
+    color: #ffffffba;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cartitems-container .restaurant-category-container .restaurantCategory .cuisinesContainer .cuisineContainer .cuisines-btn:hover {
+    background-color: #008cff;
+    color: #fff;
+}
+
+.applyfilterContainer .total-filtersContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.flex-Basic {
+    flex: 0 0 14% !important;
+}
+
+.applyfilterContainer .total-filtersContainer .apply-filterContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(175, 171, 171);
+    border-radius: 30px;
+    padding: 3px 26px;
+    gap: 10px;
+    background-color: #008cff;
+}
+
+.applyfilterContainer .total-filtersContainer .apply-filterContainer .filter-btn {
+    border-radius: 30px;
+    border: none;
+    padding: 11px 0px;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+}
+
+.applyfilterContainer .total-filtersContainer .apply-filterContainer img {
+    width: 15px;
+    height: 25px;
+}
+
+.filterButton {
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid rgb(190, 184, 184);
+    padding: 11px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.filterButton .content {
+    color: #000;
+    font-size: 14px;
+}
+
+.badge {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: block;
+    color: #fff !important;
+    position: absolute;
+    background: rgb(0 140 255);
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -10px;
+    right: -9px;
+    transition: all .3s;
+}
+
+.filterSection {
+    margin-top: 0 !important;
+    padding: 40px 20px !important;
+}
+
+
+/***************************************************** SEARCH RES CATEGORY CSS END **********************************************/
+
+
+/***************************************************** UPCOMING AND PAST ORDER CSS START **********************************************/
+
+.category-section .delivery-section {
+    margin: 20px 18px;
+    border-radius: 12px;
+    background-color: #252525;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 0 9px;
+}
+
+.category-section .deliveryOverall {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 22px;
+    line-height: 2;
+}
+
+.category-section .deliveryOverall span {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+
+.category-section .deliveryOverall .onWay {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.category-section .deliveryOverall .locate {
+    color: var(--span-color) !important;
+    font-size: 15px;
+}
+
+.category-section .deliveryOverall .deliveryOverall-content p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.category-section .deliveryOverall pre {
+    /* color: var(--main-color); */
+    font-size: 14px;
+    opacity: .9;
+}
+
+.category-section .delivery-section .delivery-overall-container .deliveryOverall .way {
+    /* color: #e1af18; */
+    /* padding: 0 50px; */
+    color: #9c9c9c;
+    opacity: .9;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.category-section .delivery-overall figure img {
+    width: 18px;
+    height: 18px;
+}
+
+.deliveryOverall img {
+    width: 17px;
+    height: 17px;
+}
+
+.delivery-section .delivery-overall-container .deliveryOverall {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delivery-section .deliveryOverall .delivery-status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.delivery-section .deliveryOverall .delivered {
+    color: rgb(86, 197, 106);
+}
+
+
+/***************************************************** UPCOMING AND PAST ORDER CSS START **********************************************/
+
+
+/***************************************************** TRACKED AND TRACK ORDER CSS START **********************************************/
+
+.order_delivered .orderedFrom {
+    display: flex;
+    padding: 14px 0;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.order_delivered .orderedFrom .orderedFrom-content {
+    line-height: 24px;
+}
+
+.order_delivered .orderedFrom .orderedFrom-content span {
+    color: #acacac;
+    font-size: 15px;
+}
+
+.order_delivered .orderedFrom img {
+    width: 17px;
+    height: 17px;
+}
+
+.order-deliveryDetail p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.order_delivered {
+    padding: 18px 22px;
+    background-color: #252525;
+    margin: 0 8px;
+    border-radius: 15px;
+}
+
+.order_delivered .order-deliveryDetail p {
+    color: rgba(20, 172, 20, 0.732);
+    /* padding-top: 14px; */
+    padding: 14px 0;
+}
+
+
+/***************************************************** TRACKED AND TRACK ORDER CSS END **********************************************/
+
+
+/***************************************************** PROFILE AND EDIT PROFILE CSS START **********************************************/
+
+.customerProfile-container {
+    text-align: center;
+    line-height: 20px;
+    margin: 0 8px;
+    border-radius: 15px;
+    background-color: #252525;
+    padding: 25px 0;
+    margin-top: 8px;
+}
+
+.customerProfile-container .customer-profileContent {
+    line-height: 26px;
+    padding-top: 5px;
+}
+
+.customerProfile-container h3 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.customerProfile-container span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #808080de;
+}
+
+.customerProfile-container figure img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.customerProfile-container .editProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.customerProfile-container .editProfile a {
+    text-decoration: none;
+    color: #ffaa00;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.customerProfile-container .editProfile img {
+    width: 14px;
+    height: 14px;
+}
+
+.profileInput.bg-yellow.addressCont {
+    display: flex;
+    margin: 24px 22px;
+    border: 1px solid rgb(206, 201, 201);
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #252525;
+    gap: 6px;
+}
+
+.noBorder {
+    border: none;
+    padding: 0;
+    margin: 0;
+    flex: 1 0 80%;
+    max-width: 80%;
+}
+
+.customerListItems {
+    padding-bottom: 150px;
+}
+
+.customerListItems .customerList {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 22px;
+    line-height: 3;
+}
+
+.customerListItems .customerListItem {
+    padding: 19px 0;
+    margin: 13px 8px;
+    background-color: #252525;
+    border-radius: 15px;
+}
+
+.customerListItems .customerListItem .customerList img {
+    width: 23px;
+    height: 22px;
+}
+
+.customerListItems .customerListItem .customerList figcaption {
+    font-size: 16px;
+    font-weight: 500;
+    color: #232323;
+}
+
+.profile-edit .profileInput input {
+    padding: 6px 3px;
+    color: var(--span-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.profile-edit .profileInput {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(206, 201, 201);
+    background-color: #252525;
+    border-radius: 12px;
+    padding: 0 13px;
+    margin: 20px 0;
+    gap: 12px;
+}
+
+.profile-edit {
+    padding: 0 22px;
+}
+
+.profile-edit .profileInput figure img {
+    width: 17px;
+    height: 17px;
+}
+
+
+/***************************************************** PROFILE AND EDIT CSS END **********************************************/
+
+
+/***************************************************** MANAGE ADDRESS CSS START **********************************************/
+
+.manageAddress-container {
+    padding: 22px 16px;
+}
+
+.manageAddress-container label {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.manageAddress-container .savedAddresses .savedAddress {
+    display: flex;
+    /* padding: 5px 0px; */
+    gap: 15px;
+    /* margin: 10px 0; */
+}
+
+.savedAddresses .addressLink .manageAddresslink {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.manageAddress-container .savedAddresses .savedAddress img {
+    width: 25px;
+    height: 20px;
+}
+
+.savedAddresses {
+    margin: 23px 0;
+    background-color: #252525;
+    padding: 19px 13px;
+    border-radius: 15px;
+}
+
+.manageAddress-container .savedAddresses .savedAddress .address-content p {
+    font-size: 14px;
+    color: #808080bd;
+    text-transform: capitalize;
+    line-height: 21px;
+    opacity: .9;
+    width: 90%;
+    font-weight: 500;
+}
+
+.address-content h3 {
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.manageAddress-container .savedAddresses .manageAddresslink img {
+    width: 16px;
+    height: 17px;
+}
+
+.manageAddress-container .savedAddresses .manageAddresslink a {
+    text-decoration: none;
+    /* color: #ffaa00; */
+    font-size: 15px;
+    color: #b4b4b4;
+    font-weight: 500;
+}
+
+.savedAddresses .addressLink {
+    display: flex;
+    padding: 0px 33px;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+
+/***************************************************** MANAGE ADDRESS CSS END **********************************************/
+
+
+/***************************************************** SEARCHES AND NEARBY LOCATION CSS START **********************************************/
+
+.currentLocation-container {
+    display: flex;
+    gap: 12px;
+    padding: 0px 30px;
+    /* margin-top: 20px; */
+    margin: 17px 0;
+}
+
+.currentLocation-container figure img {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    /* background-color: #726e6e; */
+    border-radius: 8px;
+    background: linear-gradient( 90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+}
+
+.currentLocation-container .currentLocation a {
+    color: #ffaa00;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.currentLocation-container .currentLocation pre {
+    font-size: 14px;
+}
+
+.nearbyLocation-container .nearbyLocationlist {
+    padding-top: 15px;
+}
+
+.nearbyLocation-container .nearbyLocationlist .nearLocation {}
+
+.nearbyLocation-container {
+    padding: 22px;
+    margin: 0px 8px;
+    background-color: #252525;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+
+.nearbyLocation-container .nearbyLocationlist ul .nearLocation {
+    float: none;
+    list-style: none;
+    line-height: 3;
+    font-size: 16px;
+    opacity: .8;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+/***************************************************** SEARCHES AND NEARBY LOCATION CSS START **********************************************/
+
+
+/************************************************** STEP ORDER TRACKING CSS START ******************************************************/
+
+.c-timeline__item {
+    position: relative;
+    display: flex;
+    padding: 0 10px;
+    gap: 1.5rem;
+}
+
+.c-timeline__content {
+    flex: 1;
+    position: relative;
+    order: 1;
+    padding-left: 30px;
+    /* padding-bottom: 2rem; */
+    padding-bottom: 34px;
+}
+
+.c-timeline__content::before {
+    content: "";
+    position: absolute;
+    right: 99%;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: lightgrey;
+}
+
+.c-timeline__content::after {
+    content: "";
+    position: absolute;
+    left: calc(0px - 11px);
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    z-index: 1;
+    border: 2px solid #d3d3d370;
+    border-radius: 6px;
+}
+
+.c-timeline__title {
+    margin-bottom: 0.5rem;
+    color: var(--span-color);
+    font-weight: 500;
+}
+
+.c-timeline__desc {
+    color: grey;
+}
+
+.cafeClr {
+    color: #fff !important;
+    opacity: .9;
+    font-size: 13px !important;
+}
+
+time {
+    text-align: end;
+    flex: 0 0 55px;
+    min-width: 0;
+    overflow-wrap: break-word;
+    padding-bottom: 1rem;
+    /* color: var(--span-color); */
+    opacity: .9;
+}
+
+.estimatedTime {
+    /* color: var(--span-color) !important; */
+    opacity: .9;
+}
+
+.easyTracking-container {
+    padding-bottom: 50px;
+}
+
+
+/*** Non-demo CSS ***/
+
+.wrapper {
+    /* margin: 2rem auto 0; */
+    padding-top: 37px;
+    background-color: #252525;
+    margin: 15px 21px;
+    border-radius: 15px;
+}
+
+.contents::before {
+    display: none;
+}
+
+.delivery-timings .deliveryTime {
+    display: flex;
+    align-items: center;
+}
+
+.deliveryPerson-container .deliveryPerson img {
+    width: 100px;
+    height: 80px;
+}
+
+.deliveryPerson-container .deliveryPersonpic img {
+    width: 25px;
+    padding: 8px;
+    background-color: #bd952d;
+    border-radius: 50%;
+}
+
+.deliveryPerson-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(215 211 211);
+    margin: 0 32px;
+    padding: 0 10px;
+    border-radius: 11px;
+}
+
+.deliveryPerson_content {
+    margin-right: auto;
+    line-height: 2;
+}
+
+.deliveryPlace-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #252525;
+    margin: 0 23px;
+    border-radius: 9px;
+    padding: 14px 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid rgb(239 239 239);
+}
+
+.deliveryPlace-container .deliverPlace figure img {
+    width: 100%;
+    height: 100px;
+    border-radius: 11px;
+    object-fit: cover;
+}
+
+.deliveryPlace-container .deliverPlace {
+    flex: 1 0 37%;
+}
+
+.deliveryPlace-container .deliverTo {
+    line-height: 27px;
+    flex: 1 0 65%;
+}
+
+.trakingMap-container iframe {
+    width: 100%;
+    height: 160px;
+}
+
+.deliveryPlace-container .deliverTo img {
+    width: 13px;
+    height: 13px;
+}
+
+.deliveryPlace-container .deliverTo span {
+    color: var(--span-color);
+    font-size: 13px;
+}
+
+.deliveryPlace-container .deliverTo p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/************************************************** PAYMENT CSS START ******************************************************/
+
+.payment-btn {
+    width: 100%;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin: 9px 0px;
+    border: 1px solid #cac9c9;
+    background: #252525;
+}
+
+.payment-btn:hover {
+    outline: 3px solid #ffaa00;
+}
+
+.paymentMethods-container .payment-methods {
+    padding: 18px 10px;
+}
+
+.paymentMethods-container .payment-methods figure img {
+    width: 160px;
+    height: 41px;
+    display: block;
+    object-fit: cover;
+}
+
+.cardDetails-container {
+    margin: 0 11px;
+}
+
+.cardDetails-container .cardDetails input {
+    border: 1px solid rgb(194, 191, 191);
+    border-radius: 9px;
+    padding: 13px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 17px;
+    background-color: #252525;
+}
+
+.cardDetails-container .cardDetails {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.cardDetails-container .cardNumber {
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    background-color: #252525;
+    gap: 9px;
+    border: 1px solid rgb(194, 191, 191);
+    padding: 6px 11px;
+}
+
+.cardDetails-container .cardNumber input {
+    color: #fff;
+}
+
+.cardDetails-container .cardNumber figure img {
+    width: 12px;
+    height: 12px;
+}
+
+
+/************************************************** PAYMENT CSS END ******************************************************/
+
+
+/************************************************** STEP ORDER TRACKING CSS END ******************************************************/
+
+
+/************************************************** DELIVERY PERSON CSS START ******************************************************/
+
+.smartSearch {
+    position: absolute;
+    width: 81%;
+    z-index: 1;
+}
+
+.smartSearch input {
+    background-color: #fff;
+    padding: 10px 12px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 664px;
+}
+
+.delivery-details {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding: 0 28px;
+}
+
+.deliveryPerson-contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 17px;
+    background-color: #252525;
+    margin: 0 22px;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin-top: 13px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.noBorders {
+    border: none;
+    padding: 0 6px;
+    font-size: 14px;
+}
+
+.deliveryPerson-content span {
+    color: var(--span-color);
+    font-size: 14px;
+}
+
+.deliveryPerson-content h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.deliveryTime h1 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.deliveryTime {
+    flex: 0 0 25%;
+    text-align: center;
+}
+
+.deliveryTime span {
+    color: var(--main-color);
+}
+
+.deliveryCurr p {
+    font-size: 14px;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+.deliveryPerson-contact .deliveryPerson-content {
+    margin-right: auto;
+    margin-left: 13px;
+    line-height: 28px;
+}
+
+.deliveryPerson-contact .contactImg {
+    width: 22px;
+    height: 22px;
+    padding: 13px;
+    /* background-color: var(--bg-color); */
+    /* background-color: #6c6c6c; */
+    background: linear-gradient(90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    border-radius: 50%;
+}
+
+.deliveryPerson-contact img {
+    width: 53px;
+    height: 55px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.socialMedia-container .socialMedias {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    justify-content: center;
+    padding: 48px 0;
+}
+
+.socialMedia-container .socialMedias .socialIcons img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/************************************************** DELIVERY PERSON CSS END ******************************************************/
+
+
+/***************************************************** FAQ CSS START **********************************************/
+
+.faq-container {
+    padding-top: 22px;
+    padding-bottom: 70px;
+}
+
+.acc-container {
+    /* width: 100%; */
+    padding: 0 22px;
+}
+
+.acc {
+    border: 1px solid #808080;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+.acc-head {
+    /* background-color: #fff; */
+    padding: 12px 19px;
+    font-size: 22px;
+    background-color: #252525;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.acc-content p {
+    font-size: 14px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 22px;
+    opacity: .9;
+}
+
+.acc-head::before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    opacity: .9;
+    border-top: 7px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    float: right;
+    transform: rotate(0);
+    transition: all 0.5s;
+    margin-top: 9px;
+}
+
+.acc-head p {
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.acc-content {
+    padding: 0px 19px;
+    display: none;
+}
+
+.acc-head.active::before {
+    transform: rotate(180deg);
+}
+
+.acc-head.active p {
+    color: #ffaa00;
+}
+
+.acc.active {
+    border: 2px solid rgb(140 140 140);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+/***************************************************** FAQ CSS END **********************************************/
+
+
+/********************************************************** UTILITY CLASSES ***********************************************************/
+
+.emailQuery-btn {
+    border: none;
+    /* background-color: #ffaa00; */
+    color: #fff;
+    background-color: #008cff;
+    border-radius: 20px;
+    padding: 11px 15px;
+    margin: 18px 0;
+    outline: none;
+}
+
+.bg-yellow {
+    /* background-color: #ffcdcd; */
+    /* background-color: #008cff36; */
+    /* background: linear-gradient(90deg, rgb(129 84 230 / 10%) 0.89%, rgb(230 99 171 / 17%) 98.39%); */
+}
+
+.track-btn {
+    background: none;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin: 12px 4px;
+    font-weight: 700;
+    outline: none;
+    font-size: 14px;
+    background-color: #008cff;
+    /* background: linear-gradient( 90deg, rgba(129, 84, 230, 0.8) 0%, rgba(230, 99, 171, 0.8) 98.71%); */
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-fill {
+    /* background-color: #ffaa00; */
+    color: #fff;
+    display: flex;
+    background: linear-gradient(90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    align-items: center;
+    gap: 5px;
+    border: none;
+    font-size: 15px;
+    padding: 14px 26px;
+    border-radius: 30px;
+    margin-top: 13px;
+    /* margin: auto; */
+    cursor: pointer;
+}
+
+.btn-fill img {
+    width: 20px;
+    height: 15px;
+}
+
+.btn-fullfilled {
+    /* background-color: #ffaa00; */
+    color: #fff;
+    display: flex;
+    background: linear-gradient(90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    align-items: center;
+    border: none;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+    font-size: 16px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.btn-fullfilled img {
+    width: 18px;
+    height: 18px;
+}
+
+button.offer-btn {
+    /* padding: 0px 8px; */
+    background: none;
+    margin: 8px 0;
+    border: none;
+    color: #386b93;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+}
+
+button.offer-btn img {
+    width: 22px;
+    height: 12px;
+}
+
+.quantity button {
+    border: none;
+    cursor: pointer;
+}
+
+.quantity__minus {
+    border-radius: 3px 0 0 3px;
+}
+
+.quantity__minus,
+.quantity__plus {
+    display: block;
+    width: 32px;
+    height: 33px;
+    margin: 0;
+    text-decoration: none;
+    background: transparent;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 25px;
+    /* background-color: var(--bg-color); */
+    /* background: linear-gradient(90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%); */
+}
+
+.quantity__input {
+    width: 32px;
+    height: 33px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* background-color: #ffac08; */
+    /* background: linear-gradient(90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%); */
+    color: #fff;
+    border-radius: inherit;
+    font-size: 18px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    /* background-color: #ffac08; */
+    background: linear-gradient(90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    width: fit-content;
+    border-radius: 20px;
+    margin: 14px 0;
+}
+
+.cartitems-container .delivery-location-container {
+    background-color: #252525;
+    padding: 21px 22px;
+    border-radius: 15px;
+    margin: 8px;
+}
+
+.delivery-location-container .item-delivery_location .delivery-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delivery-location-container .item-delivery_location .delivery-address .currLocation {
+    margin-right: auto;
+    margin-left: 18px;
+    line-height: 26px;
+    color: var(--main-color);
+}
+
+.delivery-location-container .item-delivery_location .delivery-address .currLocation h2 {
+    font-size: 16px;
+    color: #fff;
+    opacity: .9;
+}
+
+.delivery-location-container .item-delivery_location .delivery-address .currLocation span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--span-color);
+}
+
+.delivery-location-container .item-delivery_location .delivery-address .delivery_location {
+    border-radius: 8px;
+    padding: 12px;
+    /* background-color: #726e6e; */
+    width: 22px;
+    background: linear-gradient( 90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    height: 22px;
+}
+
+.delivery-location-container .item-delivery_location .delivery-address .couponstypes {
+    margin-right: auto;
+    margin-left: 25px;
+    opacity: .9;
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.delivery-location-container .item-delivery_location .delivery-address .forwardImg {
+    width: 25px;
+    height: 25px;
+}
+
+.cartitems-container .order-information-container {
+    padding: 18px 16px;
+    margin: 8px;
+    padding-bottom: 58px;
+    border-radius: 15px;
+    background-color: #252525;
+}
+
+.cartitems-container .order-information-container .itemsContainer .itemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.cartitems-container .order-information-container .itemsContainer .itemContainer h4 {
+    font-size: 14px;
+    color: var(--span-color);
+}
+
+.cartitems-container .order-information-container .itemsContainer .itemContainer pre {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cartitems-container .order-information-container h2 {
+    padding: 14px 0;
+}
+
+
+/********************************************** BOTTOM NAVIGATION CSS START *************************************************************/
+
+.bottomnav-btn-container {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    /* left: 5%; */
+    background: #ffffff70;
+    z-index: 6;
+    /* border-top-right-radius: 16px; */
+    /* border-top-left-radius: 16px; */
+    background-color: #000;
+    /* border-radius: 20px; */
+    background-color: #000 !important;
+    /* border-radius: 29px; */
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+.bottomnav-btn-container .btn-container {
+    padding: 5px;
+    width: 63px;
+    height: 63px;
+    margin: auto;
+    border-radius: 50%;
+    /* background: #fff; */
+    position: absolute;
+    /* background-color: #ffaa00; */
+    /* background-color: #d6d6d6; */
+    left: 51%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: translate(-50%, -50%);
+}
+
+.bottomnav-btn-container .btn-container button {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background: linear-gradient(90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    height: 100%;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    width: 100%;
+    /* background: #ffaa00; */
+    /* background: #d6d6d6; */
+    padding: 15px;
+}
+
+.bottomnav-btn-container .btn-container button img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+}
+
+.bottomnav ul {
+    /* margin-top: 10px; */
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    padding: 16px 25px;
+    line-height: 16px;
+    background-color: #252525;
+    z-index: 12;
+    /* border-top-right-radius: 50px; */
+    /* border-top-left-radius: 50px; */
+}
+
+.bottomnav ul li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.bottomnav ul li figure svg {
+    height: 100%;
+    stroke: #c4c4c4;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottomnav ul li figure {
+    /* height: 20px; */
+    width: 100%;
+    margin: 0px;
+    /* margin-bottom: 1px; */
+}
+
+
+/* .bottomnav ul li:nth-child(1) a::before {
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background: blueviolet;
+    border-radius: 50%;
+} */
+
+.bottomnav ul li figure svg path {
+    fill: none;
+}
+
+.bottomnav ul li figure.active-fill+figcaption:hover {
+    color: rgb(231, 176, 24) !important;
+    /* padding: 6px 0; */
+}
+
+.clrYellow {
+    /* color: rgb(231, 176, 24) !important; */
+}
+
+.bottomnav ul li figure.active-fill svg {
+    stroke: none;
+    transition: 1s all;
+    fill: rgb(231, 176, 24);
+}
+
+.bottomnav ul li figure.active-fill path {
+    fill: rgb(231, 176, 24);
+    stroke: rgb(231, 176, 24);
+}
+
+.bottomnav ul li figcaption {
+    color: #d6d6d6;
+}
+
+
+/* .bottomnav ul li:nth-child(1) a::before {
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background: #d6d6d6;
+    background: #ffaa00;
+    top: -12%;
+    left: 2%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.bottomnav ul li a {
+    position: relative;
+}
+
+.favNav {
+    color: #d6d6d6 !important;
+}
+
+.navImg {
+    width: 27px;
+    height: 27px;
+}
+
+.offer-btnContainer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    padding: 0 11px;
+    border: 3px solid #386b93;
+    border-radius: 20px;
+}
+
+.offer-btnContainer img {
+    width: 17px;
+    height: 25px;
+}
+
+
+/********************************************** BOTTOM NAVIGATION CSS START *************************************************************/
+
+.heading::before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    border-top: 7px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    transform: rotate(0);
+    transition: all 0.5s;
+    margin-top: 5px;
+}
+
+
+/* CAFE CATEGORY START */
+
+.cafeTabs_wrapper {
+    margin-top: 14px;
+}
+
+ul.cafeTabs {
+    background: none!important;
+    border: none!important;
+    display: flex;
+    padding: 0 21px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+}
+
+ul.cafeTabs li {
+    list-style: none;
+    cursor: pointer;
+    letter-spacing: .6px;
+    margin-right: 15px;
+    background-color: #252525;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    float: left;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 0px;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1 0 26%;
+}
+
+ul.cafeTabs li.active {
+    background-color: #ffaa00;
+    color: #fff;
+    background-color: #008cff;
+    border: 1px solid #008cff;
+}
+
+.cafeTabs_container .tab_content {
+    display: none;
+}
+
+.cafeTabs_container .tab_content.active {
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* CAFE CATEGORY END */
+
+
+/* FOOD CATEGORIES START */
+
+.categoryWrapper img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tab-wrapper {
+    text-align: center;
+    border-bottom: 1px solid #8080805c;
+    /* margin: 10px; */
+    padding-left: 14px;
+}
+
+.tabs {
+    /* margin: 0; */
+    padding: 0;
+    background-color: #252525;
+    display: flex;
+    /* border-bottom: 1px solid #8080805c; */
+    overflow: auto;
+    border-radius: 15px;
+    /* margin: 0 7px; */
+}
+
+
+/* .tab-wrapper li:nth-child(1) {
+    border-bottom: 1px solid blue;
+    border-radius: 0;
+} */
+
+.foodTab-link {
+    list-style: none;
+    /* padding: 10px 0px; */
+    padding-top: 15px;
+    flex: 1 0 16%;
+    color: #aaa;
+    /* height: 74px; */
+    margin-bottom: 0;
+    cursor: pointer;
+    /* border: 3px solid #8080804d; */
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.foodTabImg {
+    object-fit: contain !important;
+}
+
+.foodTab-link.active p {
+    /* color: #ffaa00; */
+    padding: 5px 0;
+    color: #858585;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.foodTab-link p {
+    color: #000;
+    font-size: 14px;
+    letter-spacing: .6px;
+    padding: 5px 0;
+}
+
+.foodTab-link.active {
+    color: #ffc653;
+    /* border: 3px solid #ffc653; */
+    /* text-decoration: underline; */
+    border-bottom: 1.6px solid blue !important;
+    border-radius: 0 !important;
+}
+
+.tab-content {
+    display: none;
+    text-align: center;
+    color: #888;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+/* FOOD CATEGORIES END */
+
+.c-timeline li:nth-child(1) .c-timeline__content::after {
+    /* background-color: #ffc653; */
+    background-color: #008cff;
+}
+
+.c-timeline li:nth-child(2) .c-timeline__content::after {
+    /* background-color: #ffc653; */
+    background-color: #008cff;
+}
+
+.c-timeline li:nth-child(1) .c-timeline__content::before {
+    /* background-color: #ffc653; */
+    background-color: #008cff;
+}
+
+
+/* ALL STARTING SCREEN CSS START */
+
+button.skip-btn {
+    display: block;
+    margin-left: auto;
+    border: none;
+    font-size: 15px;
+    background: none;
+    margin: 16px 8px;
+    /* margin-right: 33px; */
+    padding: 38px 0px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    padding: 12px 22px;
+    right: 0;
+}
+
+#splashScreenSlick button.slick-next.slick-arrow {
+    display: none !important;
+}
+
+.splashScreen-content {
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 14px;
+}
+
+.slick-dots li {
+    background: #fdefcc;
+    width: 45px;
+    height: 11px;
+    border-radius: 30px;
+    height: 9px;
+    transition: all 1s ease 0s;
+    background-color: #ebcf95;
+}
+
+.slick-track img {
+    width: 100%!important;
+    object-fit: contain;
+    height: 215px;
+}
+
+.slick-dots li button:before {
+    font-size: 0;
+    height: inherit;
+    width: inherit;
+}
+
+.slick-track {
+    /* height: 200px; */
+}
+
+.splashScreen-content p {
+    /* padding: 14px 50px; */
+    color: #a1a1a1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.slick-dots li.slick-active {
+    background-color: #eba008;
+    width: 33px;
+    height: 10px;
+}
+
+.slick-dots li button {
+    height: inherit;
+    width: inherit;
+    background-color: #c9c9c9;
+    border-radius: 25%;
+}
+
+ul.slick-dots {
+    position: absolute;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* bottom: 10%; */
+    display: flex;
+    justify-content: center;
+}
+
+.wHalf {
+    width: 0;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.common-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    /* align-items: center; */
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 10px;
+    height: inherit;
+}
+
+.successImg {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.pagesLink {
+    text-decoration: none;
+    text-align: -webkit-center;
+}
+
+.success-content {
+    text-align: center;
+    padding: 15px 30px;
+    margin-top: 60px;
+}
+
+img.heartFull {
+    width: 20px !important;
+    height: 20px !important;
+    padding: 7px;
+    background-color: #e2e2e2;
+    border-radius: 50%;
+}
+
+.contentMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+
+.contentImg {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.customWidth {
+    width: 93% !important;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.splashScreen-contents.success-content p {
+    /* padding-bottom: 150px; */
+}
+
+.pFixed {
+    position: fixed;
+}
+
+
+/* ALL STARTING SCREEN CSS END */
+
+
+/* FILTER */
+
+
+/* Ion.RangeSlider
+// css version 2.0.3
+// Ã‚Â© 2013-2014 Denis Ineshin | IonDen.com
+// ===================================================================================================================*/
+
+
+/* =====================================================================================================================
+// RangeSlider */
+
+.irs {
+    position: relative;
+    display: block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.irs-line {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    outline: none !important;
+}
+
+.irs-line-left,
+.irs-line-mid,
+.irs-line-right {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.irs-line-left {
+    left: 0;
+    width: 11%;
+}
+
+.irs-line-mid {
+    left: 9%;
+    width: 82%;
+}
+
+.irs-line-right {
+    right: 0;
+    width: 11%;
+}
+
+.irs-bar {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 0;
+}
+
+.irs-bar-edge {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.irs-shadow {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 0;
+}
+
+.irs-slider {
+    position: absolute;
+    display: block;
+    cursor: default;
+    z-index: 1;
+}
+
+.irs-slider.type_last {
+    z-index: 2;
+}
+
+.irs-min {
+    position: absolute;
+    display: block;
+    left: 0;
+    cursor: default;
+}
+
+.irs-max {
+    position: absolute;
+    display: block;
+    right: 0;
+    cursor: default;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.irs-grid {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.irs-with-grid .irs-grid {
+    display: block;
+}
+
+.irs-grid-pol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 8px;
+    background: #000;
+}
+
+.irs-grid-pol.small {
+    height: 4px;
+}
+
+.irs-grid-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 9px;
+    line-height: 9px;
+    padding: 0 3px;
+    color: #000;
+}
+
+.irs-disable-mask {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -1%;
+    width: 102%;
+    height: 100%;
+    cursor: default;
+    background: rgba(0, 0, 0, 0.0);
+    z-index: 2;
+}
+
+.lt-ie9 .irs-disable-mask {
+    background: #000;
+    filter: alpha(opacity=0);
+    cursor: not-allowed;
+}
+
+.irs-disabled {
+    opacity: 0.4;
+}
+
+.irs-hidden-input {
+    position: absolute !important;
+    display: block !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    outline: none !important;
+    z-index: -9999 !important;
+    background: none !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+}
+
+
+/* Ion.RangeSlider, Simple Skin
+// css version 2.0.3
+// Ã‚Â© Denis Ineshin, 2014    https://github.com/IonDen
+// Ã‚Â© guybowden, 2014        https://github.com/guybowden
+// ===================================================================================================================*/
+
+
+/* =====================================================================================================================
+// Skin details */
+
+.irs {
+    height: 55px;
+}
+
+.irs-with-grid {
+    height: 75px;
+}
+
+.irs-line {
+    height: 10px;
+    top: 33px;
+    background: #EEE;
+    background: linear-gradient(to bottom, #DDD -50%, #FFF 150%);
+    /* W3C */
+    border: 1px solid #CCC;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+}
+
+.irs-line-left {
+    height: 8px;
+}
+
+.irs-line-mid {
+    height: 8px;
+}
+
+.irs-line-right {
+    height: 8px;
+}
+
+.irs-bar {
+    height: 10px;
+    top: 33px;
+    border-top: 1px solid #428bca;
+    border-bottom: 1px solid #428bca;
+    background: #428bca;
+    background: linear-gradient(to top, rgba(66, 139, 202, 1) 0%, rgba(127, 195, 232, 1) 100%);
+    /* W3C */
+}
+
+.irs-bar-edge {
+    height: 10px;
+    top: 33px;
+    width: 14px;
+    border: 1px solid #428bca;
+    border-right: 0;
+    background: #428bca;
+    background: linear-gradient(to top, rgba(66, 139, 202, 1) 0%, rgba(127, 195, 232, 1) 100%);
+    /* W3C */
+    border-radius: 16px 0 0 16px;
+    -moz-border-radius: 16px 0 0 16px;
+}
+
+.irs-shadow {
+    height: 2px;
+    top: 38px;
+    background: #000;
+    opacity: 0.3;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.lt-ie9 .irs-shadow {
+    filter: alpha(opacity=30);
+}
+
+.irs-slider {
+    top: 25px;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #AAA;
+    background: #DDD;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 220, 1) 20%, rgba(255, 255, 255, 1) 100%);
+    /* W3C */
+    border-radius: 27px;
+    -moz-border-radius: 27px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.irs-slider.state_hover,
+.irs-slider:hover {
+    background: #FFF;
+}
+
+.irs-min,
+.irs-max {
+    color: #333;
+    font-size: 12px;
+    line-height: 1.333;
+    text-shadow: none;
+    top: 0;
+    padding: 1px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.lt-ie9 .irs-min,
+.lt-ie9 .irs-max {
+    background: #ccc;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.333;
+    text-shadow: none;
+    padding: 1px 5px;
+    background: #428bca;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.lt-ie9 .irs-from,
+.lt-ie9 .irs-to,
+.lt-ie9 .irs-single {
+    background: #999;
+}
+
+.irs-grid {
+    height: 27px;
+}
+
+.irs-grid-pol {
+    opacity: 0.5;
+    background: #428bca;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.irs-grid-pol.small {
+    background: #999;
+}
+
+.irs-grid-text {
+    bottom: 5px;
+    color: #99a4ac;
+}
+
+.slick-dots {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    bottom: 22px;
+}
+
+button.addItemBtn {
+    border: none;
+    padding: 9px 25px;
+    line-height: 14px;
+    background: linear-gradient( 90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    margin-left: auto;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+}
+
+
+/* DARK MODE CSS START */
+
+h3 {
+    color: #fff !important;
+}
+
+a {
+    color: #c8c8c8 !important;
+}
+
+figcaption {
+    color: #fff !important;
+}
+
+span {
+    color: #c8c8c8 !important;
+}
+
+p {
+    color: #fff !important;
+}
+
+
+/* DARK MODE CSS END */
+
+.h-100 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dots {
+    position: fixed;
+    bottom: 11%;
+    left: 50%;
+}
+
+.common-container.align-center.q {
+    justify-content: space-evenly;
+}
+
+::placeholder {
+    color: #fff !important;
+    opacity: .8;
+}
+
+.fixedPosition {
+    position: fixed;
+    width: 80%;
+    bottom: 10%;
+    left: 10%;
+}
+
+
+/* .trackDelivery-container {
+    position: fixed;
+    bottom: 4%;
+    background-color: #252525;
+} */
+
+#splashScreenSlick {
+    margin: 0 10px;
+    background-color: #252525;
+    padding: 30px 0;
+    border-radius: 15px;
+}
+
+
+/* TAB PAGE */
+
+.hero-section {
+    padding-top: 30px;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 235px;
+    object-fit: contain;
+}
+
+.common-section {
+    padding-top: 28px;
+    position: relative;
+    /* background: linear-gradient( 90deg, rgb(129 84 230 / 37%) 0.89%, rgb(230 99 171 / 46%) 98.39%); */
+    background: linear-gradient( 178.87deg, #8154e6 0.81%, rgba(230, 99, 171, 0.63) 31.26%, rgba(230, 99, 171, 0) 62.03%);
+}
+
+.commonSection-content {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.app-offers-container .offers-contentSection .markOffer img {
+    width: 35px;
+    height: 35px;
+}
+
+.app-offers-container .offers-contentSection .markOffer h2 {
+    font-size: 14px;
+}
+
+.app-offers-container .offers-contentSection {
+    display: flex;
+    align-items: center;
+    background: linear-gradient( 90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    justify-content: space-around;
+    text-transform: capitalize;
+    gap: 37px;
+    margin: 0 16px;
+    padding: 17px 0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.ourServices-container .servicesOffered {
+    text-align: center;
+    padding: 4px 0;
+    background-color: #252525;
+    margin: 0 20px;
+    border-radius: 15px;
+}
+
+.ourServices-container .servicesOffered .serviceList img {
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+    /* background-color: #fff; */
+    background: linear-gradient( 90deg, rgba(129, 84, 230, 0.87) 0.89%, rgba(230, 99, 171, 0.87) 98.39%);
+    border-radius: 50%;
+}
+
+.ourServices-container .servicesOffered .serviceList {
+    margin: 20px 0;
+    padding: 10px 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.ourServices-container .servicesOffered .serviceList h3 {
+    font-size: 18px;
+}
+
+.goOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 28px;
+}
+
+.app-offers-container {
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
+}
+
+.ourServices-container {
+    padding-top: 70px;
+}

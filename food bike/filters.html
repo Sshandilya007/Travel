@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="category-section restaurant-category">
+        <div class="category-nav filterSection">
+            <h2>Search</h2>
+        </div>
+        <hr>
+        <div class="location-main-container resChoice_location ">
+            <div class="location-container">
+                <figure><img src="assets/img/search.svg" alt=""></figure>
+                <input type="search" placeholder="Search Restaurants">
+            </div>
+            <a class="pagesLink" href="searchrestaurant.html"><img class="filterFullImg" src="assets/img/filter.svg" alt=""></a>
+        </div>
+
+        <div class="tabsContainer">
+            <div class="tab-teaser">
+                <div class="tab-menu">
+                    <ul>
+                        <li><a href="#" class=" mainTab bg-grey" data-rel="tab-1">Dishes<p>5 Results</p></a>
+                        </li>
+                        <li><a href="#" class="active restaurant-tab mainTab " data-rel="tab-2">Restaurants <p>10 Results</p> </a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-main-box">
+                    <div class="tab-box" id="tab-1" style="display:block;">
+                        <div class="cartitems-container dishItem-searches">
+
+                            <div class="restaurant-category-container">
+                                <div class="restaurantCategory">
+
+
+
+
+
+
+                                    <div class="restaurantCategory-rating">
+                                        <h3>Star Rating</h3>
+                                        <div class="ratingContainer">
+                                            <div class="star-rating flex-Basic">
+                                                <span>☆1</span>
+                                            </div>
+                                            <div class="star-rating flex-Basic"> <span>☆2</span>
+                                            </div>
+                                            <div class="star-rating flex-Basic"> <span>☆3</span>
+                                            </div>
+                                            <div class="star-rating flex-Basic"> <span>☆4</span>
+                                            </div>
+                                            <div class="star-rating flex-Basic bg-clr "> <span>☆5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cuisinesContainer">
+                                        <h3>Cuisines</h3>
+                                        <div class="cuisineContainer">
+                                            <button type="button" class="cuisines-btn btn-clr ">Fast Food</button>
+                                            <button class="cuisines-btn">North Food</button>
+                                            <button class="cuisines-btn">Desserts</button>
+                                            <button class="cuisines-btn">Shakes</button>
+                                            <button class="cuisines-btn">Chinese</button>
+                                            <button class="cuisines-btn">Bakery</button>
+                                            <button class="cuisines-btn">Gujarati</button>
+                                            <button class="cuisines-btn">South Indian</button>
+                                            <button class="cuisines-btn">Italian</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="cuisinesContainer">
+                                        <h3>Food Type</h3>
+                                        <div class="cuisineContainer">
+                                            <button type="button" class="cuisines-btn btn-clr ">Veg</button>
+                                            <button class="cuisines-btn">Non-Veg</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <div class="applyfilterContainer">
+                                        <div class="total-filtersContainer">
+                                            <div class="filterButton">
+                                                <span class="content">Clear All</span>
+                                                <span class="badge">6</span>
+                                            </div>
+                                            <div class="apply-filterContainer">
+                                                <button class="filter-btn">Apply</button>
+                                                <img src="assets/img/righthand.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- <div class="tab-box" id="tab-2">
+                    <h2>Tab 2</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
+<script>
+    $('.tab-menu li a').on('click', function() {
+        var target = $(this).attr('data-rel');
+        $('.tab-menu li a').removeClass('active');
+        $(this).addClass('active');
+        $("# " + target).fadeIn('slow').siblings(".tab-box ").hide();
+        return false;
+    });
+
+    // RANGE
+</script>
+
+</html>

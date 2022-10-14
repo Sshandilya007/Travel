@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" id="lightcss" href="" />
+    <!-- <link rel="stylesheet" href="css/light.css" /> -->
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="main-container gr-box pd-0">
+      <div class="conatiner-scroll w-90 m-auto pb-100">
+        <div class="offer-zone-heading pr-container">
+          <img src="./img/profile.svg" alt="" />
+          <h1 class="cl-w"><b>Profile</b></h1>
+        </div>
+        <div class="profile-img-con">
+          <img src="./img/profilepic.jpg" alt="" />
+        </div>
+        <div class="complete-profile-con">
+          <div class="complete-pro-l">
+            <div class="complte-pro-l-t">
+              <h1>Please Complete your Profile</h1>
+              <h2>Fill in Details and Travel smoothly anywhere</h2>
+            </div>
+            <p class="blue-ul">Fill Details</p>
+          </div>
+          <div class="prg-bar-1">
+            <div class="circle-big mt--20">
+              <div class="text">75%</div>
+              <svg>
+                <circle class="bg" cx="57" cy="57" r="30"></circle>
+                <circle class="progress" cx="57" cy="57" r="30"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="Black-box-container">
+          <div class="black-box-content">
+            <div class="fl-al jc-sb mb-12">
+              <h1>General Details</h1>
+              <div class="edit-btn">
+                <img src="./img/edit.svg" alt="" />
+                <p>Edit</p>
+              </div>
+            </div>
+            <div class="floating-form">
+              <div class="floating-label">
+                <input class="floating-input" type="text" placeholder=" " />
+                <span class="highlight"></span>
+                <label>FULL NAME</label>
+              </div>
+              <div class="floating-small-label-con">
+                <div class="floating-label">
+                  <input class="floating-input" type="text"   placeholder=" " id="tempStartDate" />
+                  <span class="highlight"></span>
+                  <label>DATE</label>
+                </div>
+                <div class="floating-label">
+                  <input class="floating-input" type="text" placeholder=" " />
+                  <span class="highlight"></span>
+                  <label>GENDER</label>
+                </div>
+              </div>
+              <div class="floating-small-label-con">
+                <div class="floating-label">
+                  <input class="floating-input" type="texts" placeholder=" " />
+                  <span class="highlight"></span>
+                  <label>MARTITAL STATUS</label>
+                </div>
+                <div class="floating-label">
+                  <input class="floating-input" type="text" placeholder=" " />
+                  <span class="highlight"></span>
+                  <label>NATIONALITY</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Black-box-container">
+          <div class="black-box-content">
+            <div class="fl-al jc-sb mb-12">
+              <h1>Contact Details</h1>
+              <div class="edit-btn">
+                <img src="./img/edit.svg" alt="" />
+                <p>Edit</p>
+              </div>
+            </div>
+            <div class="floating-form">
+              <div class="floating-label">
+                <input class="floating-input" type="number" placeholder=" " />
+                <span class="highlight"></span>
+                <label>PHONE NUMBER</label>
+                <img src="./img/check-g.svg" alt="" />
+              </div>
+              <div class="floating-label">
+                <input class="floating-input" type="email" placeholder=" " />
+                <span class="highlight"></span>
+                <label>EMAIL</label>
+                <img src="./img/check-g.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Black-box-container">
+          <div class="black-box-content">
+            <div class="fl-al jc-sb mb-12">
+              <h1>Travel Details</h1>
+              <div class="edit-btn">
+                <img src="./img/edit.svg" alt="" />
+                <p>Edit</p>
+              </div>
+            </div>
+            <div class="floating-form">
+              <div class="floating-label">
+                <input class="floating-input" type="text" placeholder=" " />
+                <span class="highlight"></span>
+                <label>PASSPORT DETAILS</label>
+              </div>
+              <div class="floating-small-label-con">
+                <div class="floating-label">
+                  <input class="floating-input" type="text" placeholder=" " />
+                  <span class="highlight"></span>
+                  <label>ISSUING COUNTRY </label>
+                </div>
+                <div class="floating-label">
+                  <input class="floating-input" type="text" placeholder=" "   id="tempStartDate1"/>
+                  <span class="highlight"></span>
+                  <label>EXPIRY</label>
+                </div>
+              </div>
+              <div class="floating-label">
+                <input class="floating-input" type="text" placeholder=" " />
+                <span class="highlight"></span>
+                <label>PAN CARD NUMBER</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Black-box-container">
+          <div class="profile-options">
+            <div class="fl-al">
+              <img src="./img/ticket.svg" alt="" />
+              <p class="ml-4">My Tickets</p>
+            </div>
+            <div class="arrow-right-con">
+              <img src="./img/arrow-r.svg" alt="" />
+            </div>
+          </div>
+          <hr />
+          <div class="profile-options">
+            <div class="fl-al">
+              <img src="./img/heart-g.svg" alt="" />
+              <p class="ml-4">Liked Things</p>
+            </div>
+            <div class="arrow-right-con">
+              <img src="./img/arrow-r.svg" alt="" />
+            </div>
+          </div>
+          <hr />
+          <div class="profile-options">
+            <div class="fl-al">
+              <img src="./img/trip.svg" alt="" />
+              <p class="ml-4">My Trips</p>
+            </div>
+            <div class="arrow-right-con">
+              <img src="./img/arrow-r.svg" alt="" />
+            </div>
+          </div>
+          <hr />
+          <div class="profile-options">
+            <div class="fl-al">
+              <img src="./img/heart-g.svg" alt="" />
+              <p class="ml-4">Light Mode</p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-nav-main">
+        <a href="./index.html">
+          <div class="bottom-nav-btn">
+            <img src="./img/explore.svg" alt="" />
+            <p>EXPLORE</p>
+          </div></a
+        >
+
+        <!-- <div class="bottom-nav-btn">
+          <img src="./img/Community.svg" alt="">
+          <p>COMMUNITY</p>
+        </div> -->
+        <a href="./offer-zone.html">
+          <div class="bottom-nav-btn">
+            <img src="./img/Offer.svg" alt="" />
+            <p>OFFERS</p>
+          </div></a
+        >
+        <a href="./profile.html">
+          <div class="bottom-nav-btn">
+            <img src="./img/Profile copy.svg" alt="" />
+            <p>PROFILE</p>
+          </div></a
+        >
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      
+      $("#tempStartDate").datepicker({
+        dateFormat: 'dd/mm/yy',
+
+
+       
+        altFormat: 'yy-mm-dd',
+       
+    });
+
+        $("#tempStartDate1").datepicker({
+        dateFormat: 'dd/mm/yy',
+
+
+       
+        altFormat: 'yy-mm-dd',
+       
+    });
+    </script>
+  </body>
+</html>

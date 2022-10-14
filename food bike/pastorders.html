@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="category-section">
+        <div class="category-nav">
+            <figure><img src="assets/img/leftarrowimg.svg" alt=""></figure>
+            <h2>My Orders</h2>
+        </div>
+
+        <div class="tabsContainer">
+            <div class="tab-teaser">
+                <div class="tab-menu">
+                    <ul>
+                        <li><a href="upcomingorder.html" data-rel="tab-1">Upcoming</a></li>
+                        <li><a href="#" class="active restaurant-tab" data-rel="tab-2">Past</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-main-box">
+                    <div class="tab-box pb-50" id="tab-1" style="display:block;">
+
+                        <div class="delivery-section">
+                            <div class="delivery-overall-container">
+                                <div class="deliveryOverall">
+                                    <div class="">
+                                        <h3>Burger King, <span class="locate">Greater Noida, INDIA</span></h3>
+                                        <span>₹299</span>
+                                        <div class="delivery-status">
+                                            <img src="assets/img/tick.svg" alt="">
+                                            <span class="delivered">Delivered</span>
+                                        </div>
+                                    </div>
+                                    <div class="wayTo">
+                                        <a href="trackedorder.html">
+                                            <figure><img src="assets/img/rtarrow.svg" alt=""></figure>
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="deliveryOverall">
+                                    <div class="deliveryOverall-content">
+                                        <p>2 crispy veg double patty + 1 king fries</p>
+                                        <pre>26 August 2022</pre>
+                                        <a href="cart.html" class="pagesLink"><button class="track-btn">Order Again</button></a>
+                                        <a href="rateorder.html"><button class="track-btn">Rate</button></a>
+
+                                    </div>
+                                    <div class="wayTo">
+                                        <figure><img src="assets/img/rtarrow.svg" alt=""></figure>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="delivery-section">
+                            <div class="delivery-overall-container">
+                                <div class="deliveryOverall">
+                                    <div class="">
+                                        <h3>Burger King, <span class="locate">Greater Noida, INDIA</span></h3>
+                                        <span>₹299</span>
+                                        <div class="delivery-status">
+                                            <img src="assets/img/tick.svg" alt="">
+                                            <span class="delivered">Delivered</span>
+                                        </div>
+                                    </div>
+                                    <div class="wayTo">
+                                        <figure><img src="assets/img/rtarrow.svg" alt=""></figure>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="deliveryOverall">
+                                    <div class="deliveryOverall-content">
+                                        <p>2 crispy veg double patty + 1 king fries</p>
+                                        <pre>26 August 2022</pre>
+                                        <button class="track-btn">Order Again</button>
+                                        <button class="track-btn">Rate</button>
+
+                                    </div>
+                                    <div class="wayTo">
+                                        <figure><img src="assets/img/rtarrow.svg" alt=""></figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="delivery-section">
+                            <div class="delivery-overall-container">
+                                <div class="deliveryOverall">
+                                    <div class="deliveryOverall-content">
+                                        <h3>Burger King, <span>Greater Noida, INDIA</span></h3>
+                                        <span>₹299</span>
+                                        <div class="delivery-status">
+                                            <img src="assets/img/tick.svg" alt="">
+                                            <span class="delivered">Delivered</span>
+                                        </div>
+                                    </div>
+                                    <div class="wayTo">
+                                        <figure><img src="assets/img/rtarrow.svg" alt=""></figure>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="deliveryOverall">
+                                    <div class="deliveryOverall-content">
+                                        <p>2 crispy veg double patty + 1 king fries</p>
+                                        <pre>26 August 2022</pre>
+                                        <button class="track-btn">Order Again</button>
+                                        <button class="track-btn">Rate</button>
+
+                                    </div>
+                                    <div class="wayTo">
+                                        <figure><img src="assets/img/rtarrow.svg" alt=""></figure>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="tab-box" id="tab-2">
+                    <h2>Tab 2</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
+<script>
+    $('.tab-menu li a').on('click', function() {
+        var target = $(this).attr('data-rel');
+        $('.tab-menu li a').removeClass('active');
+        $(this).addClass('active');
+        $("# " + target).fadeIn('slow').siblings(".tab-box ").hide();
+        return false;
+    });
+</script>
+
+</html>

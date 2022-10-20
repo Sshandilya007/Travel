@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
-    <meta
-      name="viewport"
-      content="initial-scale=1, width=device-width, viewport-fit=cover"
-    />
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <link rel="stylesheet" href="css/index.css" />
 
     <link rel="stylesheet" id="lightcss" href="" />
     <title>Flight search</title>
-  </head>
-  <body class="bg-search">
-    <div class="main-container">
-      <div class="container">
-        <div class="w-90">
-          <div class="header w-100">
-            <div class="location fl-al">
-              <img src="./img/location.svg" alt="location" />
-              <p>Location</p>
-            </div>
-            <a href="./profile.html">
-            <div class="header-profile">
-            <img src="./img/profilepic.jpg" alt="profile">
-            </div></a>
-          </div>
-          <div class="search-heading fl-al">
-            <img src="./img/search-flight.svg" alt="flight" />
-            <p class="ml-10"><b>Flight</b> Search</p>
-          </div>
+</head>
 
-          <div class="search-select-container">
-            <p class="z-1 lightactive">One Way</p>
-            <p class="z-1">Round Trip</p>
-            <p class="z-1">Multi Trip</p>
-            <div class="selector"></div>
-          </div>
-          <div class="search-containers">
-            <!-- <div class="search-input-container" id="location-input">
+<body class="bg-search">
+    <div class="main-container">
+        <div class="container">
+            <div class="w-90">
+                <div class="header w-100">
+                    <div class="location fl-al">
+                        <img src="./img/location.svg" alt="location" />
+                        <p>Location</p>
+                    </div>
+                    <a href="./profile.html">
+                        <div class="header-profile">
+                            <img src="./img/profilepic.jpg" alt="profile">
+                        </div>
+                    </a>
+                </div>
+                <div class="search-heading fl-al">
+                    <img src="./img/search-flight.svg" alt="flight" />
+                    <p class="ml-10"><b>Flight</b> Search</p>
+                </div>
+
+                <div class="search-select-container">
+                    <p class="z-1 lightactive">One Way</p>
+                    <p class="z-1">Round Trip</p>
+                    <p class="z-1">Multi Trip</p>
+                    <div class="selector"></div>
+                </div>
+                <div class="search-containers">
+                    <!-- <div class="search-input-container" id="location-input">
               <p>Leaving from</p>
               
                 <input type="text" name="location" placeholder=""
               />
               <h5>Indira Gandhi International Airport</h5>
             </div> -->
-            <div class="direction-container">
-              <img src="./img/tarvel.svg" alt="travel" />
-            </div>
-            <!-- <div class="search-input-container" id="location-output">
+                    <div class="direction-container">
+                        <img src="./img/tarvel.svg" alt="travel" />
+                    </div>
+                    <!-- <div class="search-input-container" id="location-output">
 
               <p>Leaving from</p>
               
                 <input type="text" name="location" placeholder="Del"/>
               <h5>Indira Gandhi International Airport</h5>
             </div> -->
-            <div class="floating-small-label-con search">
-              <div class="floating-label search" id="location-input">
-                <input class="floating-input search" type="text" placeholder=" " />
-                <span class="highlight search"></span>
-                <label>Leaving From </label>
-                <h5>--</h5>
-              </div>
-              <div class="floating-label search" id="location-output">
-                <input class="floating-input search" type="text" placeholder=" " />
-                <span class="highlight search"></span>
-                <label>Going to</label>
-                <h5>--</h5>
-              </div>
-            </div>
-          </div>
-          <div class="search-input-container fl-al mt-20">
-            <div>
-              <p>Departure Date</p>
-              <input type="text" name="location" placeholder="dd/mm/yy"  id="tempStartDate"  />
-            </div>
-            <hr />
-            <div class="ml-10">
-              <p>Return date</p>
-              <input type="text" name="location" id="tempStartDate1" placeholder="dd/mm/yy"  />
-            </div>
-          </div>
-          <!-- <div class="search-input-container mt-20" id="passenge-bottomsheet">
+                    <div class="floating-small-label-con search">
+                        <div class="floating-label search" id="location-input">
+                            <input class="floating-input search" type="text" placeholder=" " />
+                            <span class="highlight search"></span>
+                            <label>Leaving From </label>
+                            <h5>--</h5>
+                        </div>
+                        <div class="floating-label search" id="location-output">
+                            <input class="floating-input search" type="text" placeholder=" " />
+                            <span class="highlight search"></span>
+                            <label>Going to</label>
+                            <h5>--</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-input-container fl-al mt-20">
+                    <div>
+                        <p>Departure Date</p>
+                        <input type="text" name="location" placeholder="dd/mm/yy" id="tempStartDate" />
+                    </div>
+                    <hr />
+                    <div class="ml-10">
+                        <p>Return date</p>
+                        <input type="text" name="location" id="tempStartDate1" placeholder="dd/mm/yy" />
+                    </div>
+                </div>
+                <!-- <div class="search-input-container mt-20" id="passenge-bottomsheet">
             <p>Passangers & Class</p>
             <input
               type="text"
@@ -94,283 +94,308 @@
               placeholder="2 Adults, 1 Child"
             />
           </div> -->
-          <div class="floating-label search" id="passenge-bottomsheet">
-            <input class="floating-input search" type="text" placeholder=" " />
-            <span class="highlight search"></span>
-            <label>Passangers & Class</label>
-            
-          </div>
-          <a href="./flights.html">
-            <button class="gradeint-big w-100 mt-60">Search</button></a
-          >
-        </div>
-        <div class="offer-section">
-          <div class="heading-con fl-al ml-20">
-            <img src="./img/offer-w.svg" alt="world" />
-            <p>Offer Section</p>
-          </div>
-          <h3 class="ml-20">Welcome Offers for you VARUN</h3>
+                <div class="floating-label search" id="passenge-bottomsheet">
+                    <input class="floating-input search" type="text" placeholder=" " />
+                    <span class="highlight search"></span>
+                    <label>Passangers & Class</label>
 
-          <div class="offer-options-container">
-            <div class="offer-options ml-20 active">
-              <p>All</p>
+                </div>
+                <a href="./flights.html">
+                    <button class="gradeint-big w-100 mt-60">Search</button></a>
             </div>
-            <div class="offer-options">
-              <p>Hotels</p>
-            </div>
-            <div class="offer-options">
-              <p>Flights</p>
-            </div>
-            <div class="offer-options">
-              <p>Combo Offers</p>
-            </div>
-            <div class="offer-options">
-              <p>Family Offers</p>
-            </div>
-          </div>
-          <div class="offers-pics">
-            <div class="offer-pic-container ml-20">
-              <div class="preview-background-2"></div>
-              <img src="./img/pic2.jpg" alt="offer" />
+            <div class="offer-section">
+                <div class="heading-con fl-al ml-20">
+                    <img src="./img/offer-w.svg" alt="world" />
+                    <p>Offer Section</p>
+                </div>
+                <h3 class="ml-20">Welcome Offers for you VARUN</h3>
 
-              <div class="offer-content">
-                <p>18% off on Japan Deals</p>
-              </div>
-              <div class="arrow-container">
-                <img src="./img/arrow.png" alt="arrow" />
-              </div>
-            </div>
-            <div class="offer-pic-container">
-              <div class="preview-background-2"></div>
-              <img src="./img/pic2.jpg" alt="offer" />
+                <div class="offer-options-container">
+                    <div class="offer-options ml-20 active">
+                        <p>All</p>
+                    </div>
+                    <div class="offer-options">
+                        <p>Hotels</p>
+                    </div>
+                    <div class="offer-options">
+                        <p>Flights</p>
+                    </div>
+                    <div class="offer-options">
+                        <p>Combo Offers</p>
+                    </div>
+                    <div class="offer-options">
+                        <p>Family Offers</p>
+                    </div>
+                </div>
+                <div class="offers-pics">
+                    <div class="offer-pic-container ml-20">
+                        <div class="preview-background-2"></div>
+                        <img src="./img/pic2.jpg" alt="offer" />
 
-              <div class="offer-content">
-                <p>18% off on Japan Deals</p>
-              </div>
-              <div class="arrow-container">
-                <img src="./img/arrow.png" alt="arrow" />
-              </div>
-            </div>
-            <div class="offer-pic-container">
-              <div class="preview-background-2"></div>
-              <img src="./img/pic2.jpg" alt="offer" />
+                        <div class="offer-content">
+                            <p>18% off on Japan Deals</p>
+                        </div>
+                        <div class="arrow-container">
+                            <img src="./img/arrow.png" alt="arrow" />
+                        </div>
+                    </div>
+                    <div class="offer-pic-container">
+                        <div class="preview-background-2"></div>
+                        <img src="./img/pic2.jpg" alt="offer" />
 
-              <div class="offer-content">
-                <p>18% off on Japan Deals</p>
-              </div>
-              <div class="arrow-container">
-                <img src="./img/arrow.png" alt="arrow" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-90">
-          <div class="heading-con fl-al mt-20">
-            <img src="./img/package.svg" alt="world" />
-            <p>Whole Package</p>
-          </div>
+                        <div class="offer-content">
+                            <p>18% off on Japan Deals</p>
+                        </div>
+                        <div class="arrow-container">
+                            <img src="./img/arrow.png" alt="arrow" />
+                        </div>
+                    </div>
+                    <div class="offer-pic-container">
+                        <div class="preview-background-2"></div>
+                        <img src="./img/pic2.jpg" alt="offer" />
 
-          <div class="gradient-slider">
-            <div class="gr-sliding-pic-con">
-              <div class="preview-background-5"></div>
-              <img src="./img/pic5.jpg" alt="pic" />
+                        <div class="offer-content">
+                            <p>18% off on Japan Deals</p>
+                        </div>
+                        <div class="arrow-container">
+                            <img src="./img/arrow.png" alt="arrow" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-90">
+                <div class="heading-con fl-al mt-20">
+                    <img src="./img/package.svg" alt="world" />
+                    <p>Whole Package</p>
+                </div>
 
-              <div class="gr-slider-con-h"><p>Night-life</p></div>
-              <p class="slide-head">The Night is dark and full of terrors</p>
-              <button class="gradeint-small">Book now</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-100">
-          <div class="search-bottom-bar fl-al">
-            <div class="search-bottom-btn">
-              <img src="./img/plane-nb.png" alt="plane" />
-              <p>Book a ticket</p>
-            </div>
-            <div class="search-bottom-btn">
-              <img src="./img/check.svg" alt="plane" />
-              <p>Check In</p>
-            </div>
-            <div class="search-bottom-btn">
-              <img src="./img/time.svg" alt="plane" />
-              <p>Flight Status</p>
-            </div>
-          </div>
-        </div>
-        <div class="bottom-sheet-location">
-          <div class="w-90">
-            <img src="./img/close.svg" alt="close" class="close-btn">
-            <div class="search-container">
-              </a>
-              <img src="./img/search-g.svg" alt="" />
-              <input type="text" />
-            </div>
-            <div class="current-l-con">
-              <img src="./img/loc-b.svg" alt="" />
-              <div>
-                <h1>Current location</h1>
-                <p>Enable location sharing to see nearby airports</p>
-              </div>
-            </div>
-            <div class="pc fl-al">
-              <img src="./img/star-circle.svg" alt="" />
-              <p>Popular Cities</p>
-            </div>
-            <div class="search-item-con">
-              <div class="search-item">
-                <div>
-                  <h1>Kolkata, India</h1>
-                  <h2>Neetaji Subhash Chandra Bose International Airport</h2>
-                </div>
-                <div class="airport-code">
-                  <p>CCU</p>
-                </div>
-              </div>
-              <div class="search-item">
-                <div>
-                  <h1>Kolkata, India</h1>
-                  <h2>Neetaji Subhash Chandra Bose International Airport</h2>
-                </div>
-                <div class="airport-code">
-                  <p>CCU</p>
-                </div>
-              </div>
-              <div class="search-item">
-                <div>
-                  <h1>Kolkata, India</h1>
-                  <h2>Neetaji Subhash Chandra Bose International Airport</h2>
-                </div>
-                <div class="airport-code">
-                  <p>CCU</p>
-                </div>
-              </div>
-              <div class="search-item">
-                <div>
-                  <h1>Kolkata, India</h1>
-                  <h2>Neetaji Subhash Chandra Bose International Airport</h2>
-                </div>
-                <div class="airport-code">
-                  <p>CCU</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="overlay-body"></div>
-        <div id="room-bs">
-          <div class="w-90 m-auto">
-            <img src="./img/close.svg" alt="close" class="close-btn">
-            <div class="bottom-sheet-content">
-<p>Add number of travelers</p>
-<div class="fl-al jc-sb mb-12"><div><h1>Adults<h2>12 yrs & above</h2></h1></div>
-  <div class="counter">
-  <div class="number">
-	<span class="minus">-</span>
-	<input type="text" value="1"/>
-	<span class="plus">+</span>
-</div>
-</div>
-</div>
-<div class="fl-al jc-sb mb-12"><div><h1>Children<h2>2 - 12 yrs </h2></h1></div>
-  <div class="counter">
-  <div class="number">
-	<span class="minus">-</span>
-	<input type="text" value="1"/>
-	<span class="plus">+</span>
-</div>
-</div>
-</div>
-<div class="fl-al jc-sb mb-12"><div><h1>Infants<h2>Under 2 yrs</h2></h1></div>
-  <div class="counter">
-  <div class="number">
-	<span class="minus">-</span>
-	<input type="text" value="1"/>
-	<span class="plus">+</span>
-</div>
-</div>
-</div>
-<p class="mt-38">Choose Class</p>
-<div class="class-selection">
-  <div class="class-plane active"><p>Economy</p></div>
-  <div class="class-plane"><p>Economy</p></div>
-  <div class="class-plane"><p>Economy</p></div>
-  <div class="class-plane"><p>Economy</p></div>
-</div>
-            </div>
-          </div>
-          <button class="gradeint-big w-90">Done</button>
-        </div>
-        <div class="bottom-nav-main">
-          <a href="./index.html">
-          <div class="bottom-nav-btn">
-            <img src="./img/explore.svg" alt="">
-            <p>EXPLORE</p>
-          </div></a>
+                <div class="gradient-slider">
+                    <div class="gr-sliding-pic-con">
+                        <div class="preview-background-5"></div>
+                        <img src="./img/pic5.jpg" alt="pic" />
 
-          <!-- <div class="bottom-nav-btn">
+                        <div class="gr-slider-con-h">
+                            <p>Night-life</p>
+                        </div>
+                        <p class="slide-head">The Night is dark and full of terrors</p>
+                        <button class="gradeint-small">Book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100">
+                <div class="search-bottom-bar fl-al">
+                    <div class="search-bottom-btn">
+                        <img src="./img/plane-nb.png" alt="plane" />
+                        <p>Book a ticket</p>
+                    </div>
+                    <div class="search-bottom-btn">
+                        <img src="./img/check.svg" alt="plane" />
+                        <p>Check In</p>
+                    </div>
+                    <div class="search-bottom-btn">
+                        <img src="./img/time.svg" alt="plane" />
+                        <p>Flight Status</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-sheet-location">
+                <div class="w-90">
+                    <img src="./img/close.svg" alt="close" class="close-btn">
+                    <div class="search-container">
+                        </a>
+                        <img src="./img/search-g.svg" alt="" />
+                        <input type="text" />
+                    </div>
+                    <div class="current-l-con">
+                        <img src="./img/loc-b.svg" alt="" />
+                        <div>
+                            <h1>Current location</h1>
+                            <p>Enable location sharing to see nearby airports</p>
+                        </div>
+                    </div>
+                    <div class="pc fl-al">
+                        <img src="./img/star-circle.svg" alt="" />
+                        <p>Popular Cities</p>
+                    </div>
+                    <div class="search-item-con">
+                        <div class="search-item">
+                            <div>
+                                <h1>Kolkata, India</h1>
+                                <h2>Neetaji Subhash Chandra Bose International Airport</h2>
+                            </div>
+                            <div class="airport-code">
+                                <p>CCU</p>
+                            </div>
+                        </div>
+                        <div class="search-item">
+                            <div>
+                                <h1>Kolkata, India</h1>
+                                <h2>Neetaji Subhash Chandra Bose International Airport</h2>
+                            </div>
+                            <div class="airport-code">
+                                <p>CCU</p>
+                            </div>
+                        </div>
+                        <div class="search-item">
+                            <div>
+                                <h1>Kolkata, India</h1>
+                                <h2>Neetaji Subhash Chandra Bose International Airport</h2>
+                            </div>
+                            <div class="airport-code">
+                                <p>CCU</p>
+                            </div>
+                        </div>
+                        <div class="search-item">
+                            <div>
+                                <h1>Kolkata, India</h1>
+                                <h2>Neetaji Subhash Chandra Bose International Airport</h2>
+                            </div>
+                            <div class="airport-code">
+                                <p>CCU</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-body"></div>
+            <div id="room-bs">
+                <div class="w-90 m-auto">
+                    <img src="./img/close.svg" alt="close" class="close-btn">
+                    <div class="bottom-sheet-content">
+                        <p>Add number of travelers</p>
+                        <div class="fl-al jc-sb mb-12">
+                            <div>
+                                <h1>Adults
+                                    <h2>12 yrs & above</h2>
+                                </h1>
+                            </div>
+                            <div class="counter">
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" value="1" />
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl-al jc-sb mb-12">
+                            <div>
+                                <h1>Children
+                                    <h2>2 - 12 yrs </h2>
+                                </h1>
+                            </div>
+                            <div class="counter">
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" value="1" />
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl-al jc-sb mb-12">
+                            <div>
+                                <h1>Infants
+                                    <h2>Under 2 yrs</h2>
+                                </h1>
+                            </div>
+                            <div class="counter">
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" value="1" />
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-38">Choose Class</p>
+                        <div class="class-selection">
+                            <div class="class-plane active">
+                                <p>Economy</p>
+                            </div>
+                            <div class="class-plane">
+                                <p>Economy</p>
+                            </div>
+                            <div class="class-plane">
+                                <p>Economy</p>
+                            </div>
+                            <div class="class-plane">
+                                <p>Economy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="gradeint-big w-90">Done</button>
+            </div>
+            <div class="bottom-nav-main">
+                <a href="./index.html">
+                    <div class="bottom-nav-btn">
+                        <img src="./img/explore.svg" alt="">
+                        <p>EXPLORE</p>
+                    </div>
+                </a>
+
+                <!-- <div class="bottom-nav-btn">
             <img src="./img/Community.svg" alt="">
             <p>COMMUNITY</p>
           </div> -->
-          <a href="./offer-zone.html">
-          <div class="bottom-nav-btn">
-            <img src="./img/Offer.svg" alt="">
-            <p>OFFERS</p>
-          </div></a>
-          <a href="./profile.html">
-          <div class="bottom-nav-btn">
-            <img src="./img/Profile copy.svg" alt="">
-            <p>PROFILE</p>
-          </div></a>
+                <a href="./offer-zone.html">
+                    <div class="bottom-nav-btn">
+                        <img src="./img/Offer.svg" alt="">
+                        <p>OFFERS</p>
+                    </div>
+                </a>
+                <a href="./profile.html">
+                    <div class="bottom-nav-btn">
+                        <img src="./img/Profile copy.svg" alt="">
+                        <p>PROFILE</p>
+                    </div>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
-  <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="./js/index.js"></script>
-  <script>
-    $(".offer-options ").click(function(){
-      $(".offer-options").removeClass('active');
-      $(this).addClass('active')
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    $(".offer-options ").click(function() {
+        $(".offer-options").removeClass('active');
+        $(this).addClass('active')
     })
-  </script>
-    <script>
-      $(".class-plane ").click(function(){
+</script>
+<script>
+    $(".class-plane ").click(function() {
         $(".class-plane").removeClass('active');
         $(this).addClass('active')
-      })
-    </script>
-    <script>
-     $(".search-select-container p").click(function(e){
-      setTimeout(()=>{
-   $(".search-select-container p").removeClass("lightactive");
-      $(this).addClass("lightactive");
-    },300 )
-      console.log($(this).offset().left-$(".search-select-container").offset().left-23.018)
-    $(".selector").animate({left:$(this).offset().left-$(".search-select-container").offset().left })
-     });
+    })
+</script>
+<script>
+    $(".search-select-container p").click(function(e) {
+        setTimeout(() => {
+            $(".search-select-container p").removeClass("lightactive");
+            $(this).addClass("lightactive");
+        }, 300)
+        console.log($(this).offset().left - $(".search-select-container").offset().left - 23.018)
+        $(".selector").animate({
+            left: $(this).offset().left - $(".search-select-container").offset().left
+        })
+    });
 
 
 
-      $("#tempStartDate").datepicker({
+    $("#tempStartDate").datepicker({
         dateFormat: 'dd/mm/yy',
 
 
-       
+
         altFormat: 'yy-mm-dd',
-       
+
     });
-       $("#tempStartDate1").datepicker({
+    $("#tempStartDate1").datepicker({
         dateFormat: 'dd/mm/yy',
-    
-        
+
+
         altFormat: 'yy-mm-dd',
-      
+
     });
-    </script>
-    
+</script>
+
 </html>

@@ -12,16 +12,22 @@
 <body>
     <div class="category-section">
         <div class="category-nav">
-            <figure><img src="assets/img/leftarrowimg.svg" alt=""></figure>
+            <img src="assets/img/newarrow.svg" alt="">
             <h2>Restaurants</h2>
         </div>
         <hr>
 
         <div class="restaurant-choices">
             <div class="location-main-container">
-                <div class="location-container customWidth">
+                <!-- <div class="location-container customWidth">
                     <figure><img src="assets/img/search.svg" alt=""></figure>
                     <input type="search" placeholder="Search Restaurants">
+                </div> -->
+                <div class="searchChoice m-0">
+                    <div style="margin: -7px 0;">
+                        <img src="assets/img/searchgr.svg" alt="">
+                        <input type="search" name="homeSearch" placeholder="Try Searching  “Restaurant Name”">
+                    </div>
                 </div>
             </div>
             <div class="restaurant-choice">
@@ -37,13 +43,14 @@
                 <div class="restaurant-content">
                     <div class="restaurant-details">
                         <h3>Mom's Cafe</h3>
-                        <img src="assets/img/location.svg" alt="" style="width: 10px;">
+                        <img class="locationNew" src="assets/img/locationnew.svg" alt="">
                         <span>3.2 km away</span>
                     </div>
                     <div class="restaurant-ratings">
-                        <!-- <figure><img src="assets/img/rating.png" alt=""></figure> -->
-                        <span>☆</span>
-                        <span>3.5</span>
+                        <div class="ratingSpace">
+                            <img src="assets/img/rating.svg" alt="">
+                            <span>3.5</span>
+                        </div>
                         <pre>Rating</pre>
                     </div>
                 </div>
@@ -52,7 +59,7 @@
             <div class="restaurant-choice">
                 <div class="restaurant_overlay-container">
                     <div class="res_content">
-                        <figure><img src="assets/img/like.svg" alt=""></figure>
+                        <figure><img src="assets/img/newheart.svg" alt=""></figure>
 
                         <span>Newly opened</span>
                     </div>
@@ -64,13 +71,14 @@
                 <div class="restaurant-content">
                     <div class="restaurant-details">
                         <h3>Joy's Cafe</h3>
-                        <img src="assets/img/location.svg" alt="" style="width: 10px;">
+                        <img class="locationNew" src="assets/img/locationnew.svg" alt="">
                         <span>1.8 km away</span>
                     </div>
                     <div class="restaurant-ratings">
-                        <!-- <figure><img src="assets/img/rating.png" alt=""></figure> -->
-                        <span>☆</span>
-                        <span>4.7</span>
+                        <div class="ratingSpace">
+                            <img src="assets/img/rating.svg" alt="">
+                            <span>4.7</span>
+                        </div>
                         <pre>Rating</pre>
                     </div>
                 </div>
@@ -79,7 +87,7 @@
             <div class="restaurant-choice">
                 <div class="restaurant_overlay-container">
                     <div class="res_content">
-                        <figure><img src="assets/img/like.svg" alt=""></figure>
+                        <figure><img src="assets/img/newheart.svg" alt=""></figure>
                         <span>Newly opened</span>
                     </div>
                 </div>
@@ -87,12 +95,14 @@
                 <div class="restaurant-content">
                     <div class="restaurant-details">
                         <h3>John's Cafe</h3>
-                        <img src="assets/img/location.svg" alt="" style="width: 10px;">
+                        <img class="locationNew" src="assets/img/locationnew.svg" alt="">
                         <span>3.2 km away</span>
                     </div>
                     <div class="restaurant-ratings">
-                        <span>☆</span>
-                        <span>4.2</span>
+                        <div class="ratingSpace">
+                            <img src="assets/img/rating.svg" alt="">
+                            <span>4.2</span>
+                        </div>
                         <pre>Rating</pre>
                     </div>
                 </div>
@@ -101,7 +111,9 @@
             <div class="restaurant-choice">
                 <div class="restaurant_overlay-container">
                     <div class="res_content">
-                        <figure><img src="assets/img/like.svg" alt=""></figure>
+                        <div class="kj">
+                            <figure><img src="assets/img/newheart.svg" alt=""></figure>
+                        </div>
                         <span>Newly opened</span>
                     </div>
                 </div>
@@ -109,12 +121,14 @@
                 <div class="restaurant-content">
                     <div class="restaurant-details">
                         <h3>John's Cafe</h3>
-                        <img src="assets/img/location.svg" alt="" style="width: 10px;">
+                        <img class="locationNew" src="assets/img/locationnew.svg" alt="">
                         <span>3.2 km away</span>
                     </div>
                     <div class="restaurant-ratings">
-                        <span>☆</span>
-                        <span>4.2</span>
+                        <div class="ratingSpace">
+                            <img src="assets/img/rating.svg" alt="">
+                            <span>4.2</span>
+                        </div>
                         <pre>Rating</pre>
                     </div>
                 </div>
@@ -122,6 +136,12 @@
 
         </div>
     </div>
+
+    <a class="pagesLink" href="favouriterestaurant.html">
+        <div class="forwardRef">
+            <img src="assets/img/forwardarrow.svg" alt="">
+        </div>
+    </a>
 </body>
 
 </html>

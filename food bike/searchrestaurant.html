@@ -10,24 +10,29 @@
 </head>
 
 <body>
-    <div class="menu-btn " style="left:5px;">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-    </div>
+    <div class="overlayFadeContainer"></div>
 
     <div class="category-section">
-        <div class="category-nav">
-            <h2>Search</h2>
-        </div>
-        <hr>
-
-        <div class="location-main-container resChoice_location ">
-            <div class="location-container wHalf">
-                <figure><img src="assets/img/search.svg" alt=""></figure>
-                <input type="search" placeholder="Search Restaurants">
+        <div class="bg-greyish">
+            <div class="category-nav">
+                <h2>Search</h2>
             </div>
-            <a href="filters.html"><img class="filterFullImg" src="assets/img/filter.svg" alt=""></a>
+            <hr>
+
+            <div class="location-main-container resChoice_location ">
+                <div class="location-container wHalf">
+                    <!-- <figure><img src="assets/img/search.svg" alt=""></figure>
+                <input type="search" placeholder="Search Restaurants"> -->
+                    <div class="searchChoice searchChange m-0">
+                        <div style="margin: -7px 0;">
+                            <img src="assets/img/searchgr.svg" alt="">
+                            <input type="search" name="homeSearch" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+                <a href="#"><img class="filterFullImg" src="assets/img/filter.svg" alt=""></a>
+            </div>
+
         </div>
 
         <div class="tabsContainer">
@@ -182,80 +187,91 @@
             </div>
         </div>
 
-        <aside class="sidenav">
 
-
-            <div class="name-container">
-
-                <h3>Hello David</h3>
-            </div>
-
-            <ul>
-                <li>
-                    <a href="home.html"><img src="assets/img/cfe">
-                        <p>Offers</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="orders.html"><img src="assets/img/shops.svg">
-                        <p>Orders</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="profile.html"><img src="img/profile.svg">
-                        <p>Profile</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="reward.html"><img src="img/rewards.svg">
-                        <p>Rewards</p>
-                    </a>
-                </li>
-
-
-            </ul>
-            <hr>
-            <ul>
-                <li>
-                    <a href="home.html"><img src="img/home.svg">
-                        <p>Terms &amp; Condtion</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="Orders.html"><img src="img/privacy.svg">
-                        <p>Privacy Policy</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="profile.html"><img src="assets/img/share.svg">
-                        <p>Share</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://forms.gle/8w8kgti2DugA8ZZx6"><img src="img/feedback.svg">
-                        <p>Feedback</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="profile.html"><img src="img/phone.svg">
-                        <p>Contact Us</p>
-                    </a>
-                </li>
-
-
-            </ul>
-
-            <ul class="logout-btn">
-                <li>
-                    <a href="#"><img src="img/logout.svg">
-                        <p>Logout</p>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-
-        <div class="sideOverlay-container"></div>
     </div>
+
+
+
+
+    <!-- BOTTOMSHEET START -->
+    <div class="cartitems-container dishItem-searches bottomsheet">
+
+        <div class="restaurant-category-container">
+            <div class="restaurantCategory">
+
+                <div class="restaurantCategory-rating">
+                    <div class="makeContentFlex">
+                        <h3>Star Rating</h3>
+                        <img class="closeBottomsheet" src="assets/img/close.svg" alt="">
+                    </div>
+                    <div class="ratingContainer">
+                        <div class="star-rating flex-Basic">
+                            <span>☆1</span>
+                        </div>
+                        <div class="star-rating flex-Basic"> <span>☆2</span>
+                        </div>
+                        <div class="star-rating flex-Basic"> <span>☆3</span>
+                        </div>
+                        <div class="star-rating flex-Basic"> <span>☆4</span>
+                        </div>
+                        <div class="star-rating flex-Basic bg-clr "> <span>☆5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cuisinesContainer">
+                    <h3>Cuisines</h3>
+                    <div class="cuisineContainer">
+                        <button type="button" class="cuisines-btn btn-clr ">Fast Food</button>
+                        <button class="cuisines-btn">North Food</button>
+                        <button class="cuisines-btn">Desserts</button>
+                        <button class="cuisines-btn">Shakes</button>
+                        <button class="cuisines-btn">Chinese</button>
+                        <button class="cuisines-btn">Bakery</button>
+                        <button class="cuisines-btn">Gujarati</button>
+                        <button class="cuisines-btn">South Indian</button>
+                        <button class="cuisines-btn">Italian</button>
+                    </div>
+                </div>
+
+                <div class="cuisinesContainer">
+                    <h3>Food Type</h3>
+                    <div class="cuisineContainer">
+                        <button type="button" class="cuisines-btn btn-clr ">Veg</button>
+                        <button class="cuisines-btn">Non-Veg</button>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="applyfilterContainer">
+                    <div class="total-filtersContainer">
+                        <div class="filterButton">
+                            <span class="content">Clear All</span>
+                            <span class="badge">6</span>
+                        </div>
+                        <div class="apply-filterContainer">
+                            <button class="filter-btn">Apply</button>
+                            <img src="assets/img/righthand.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- BOTTOMSHEER END -->
+
+
+
+
+
+
+
+    <a class="pagesLink" href="upcomingorder.html">
+        <div class="forwardRef">
+            <img src="assets/img/forwardarrow.svg" alt="">
+        </div>
+    </a>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
@@ -301,6 +317,19 @@
 
         $(".sideOverlay-container").fadeOut();
     })
+
+
+    $('.filterFullImg').click(function() {
+        $('.overlayFadeContainer').fadeIn();
+        $(".bottomsheet").animate({
+            "top": "28%"
+        }, 600);
+    });
+
+    $('.closeBottomsheet').click(function() {
+        $('.bottomsheet').fadeOut(200);
+        $('.overlayFadeContainer').fadeOut();
+    });
 </script>
 
 </html>
